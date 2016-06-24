@@ -134,6 +134,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public boolean existeAdmin() {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        Query query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.isAdmin = 1");
+        return query.getFirstResult() > 0;
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         Connection c = null;
@@ -164,6 +169,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
         }
 
         return false; // Usuário não cadastrado.
+        */
     }
 
     /**
@@ -175,8 +181,9 @@ public class UsuarioDAOImpl implements UsuarioDAO {
     @Override
     public boolean existeUsuario(String login) {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.logion = " + login);
-        return query.getResultList();
+        Query query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.logion = :login");
+        query.setParameter("login", login);
+        return query.getFirstResult() > 0;
 
         /*
         PreparedStatement query = null;
