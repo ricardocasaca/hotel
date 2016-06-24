@@ -1,11 +1,15 @@
 package com.ricardo.dataaccess;
 
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.UsuarioDAO;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.pessoa.UsuarioSimples;
+import com.ricardo.suites.Quarto;
 import com.ricardo.util.CloseQuietly;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.net.ConnectException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -42,6 +46,10 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public Usuario getUsuarioPorLogin(String login) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        return entityManager.find(Usuario.class, login);
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         Usuario usuario = null;
@@ -72,7 +80,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
         }
 
         return usuario;
-
+        */
     }
 
     /**
@@ -82,6 +90,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public List<Usuario> getUsuariosSistema() {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        Query query = entityManager.createQuery("SELECT u FROM Usuario u");
+        return query.getResultList();
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         List<Usuario> usuarios = new ArrayList<>();
@@ -111,6 +124,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
         }
 
         return usuarios;
+        */
     }
 
     /**
@@ -160,6 +174,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public boolean existeUsuario(String login) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        Query query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.logion = " + login);
+        return query.getResultList();
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         Connection c = null;
@@ -190,6 +209,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
         }
 
         return false; // Usuário não cadastrado.
+        */
     }
 
     /**
@@ -199,6 +219,13 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public void inserirUsuario(Usuario usuario) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        entityManager.getTransaction().begin();
+        entityManager.persist(usuario);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+
+        /*
         PreparedStatement query = null;
         Connection c = null;
 
@@ -224,5 +251,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
             if (c != null)
                 this.conexaoHandler.liberarConexao(c);
         }
+        */
     }
 }

@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce192-eb0a-4de4-9d74-6af9494f619b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotel.db" afterPath="$PROJECT_DIR$/hotel.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelV4.iml" afterPath="$PROJECT_DIR$/HotelV4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
     </list>
     <ignored path="HotelV4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,18 +30,18 @@
       <file leaf-file-name="QuartoDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservaDAOImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java">
+      <file leaf-file-name="UsuarioDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="176">
+              <caret line="177" column="106" selection-start-line="177" selection-start-column="106" selection-end-line="177" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -88,6 +79,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -638,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466780028239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="QuartoDAO modificado para funcionar com JPA">
+      <created>1466795439133</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1466795439133</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -682,7 +682,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Projeto agora faz uso do maven." />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto agora faz uso do maven." />
+    <MESSAGE value="QuartoDAO modificado para funcionar com JPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuartoDAO modificado para funcionar com JPA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,18 +973,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
+        <state relative-caret-position="126">
+          <caret line="204" column="124" selection-start-line="204" selection-start-column="124" selection-end-line="204" selection-end-column="124" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="177" column="106" selection-start-line="177" selection-start-column="106" selection-end-line="177" selection-end-column="106" />
           <folding />
         </state>
       </provider>

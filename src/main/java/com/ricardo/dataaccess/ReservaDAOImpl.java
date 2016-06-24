@@ -1,5 +1,6 @@
 package com.ricardo.dataaccess;
 
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.interfaces.ReservaDAO;
@@ -10,6 +11,8 @@ import com.ricardo.suites.Reserva;
 import com.ricardo.util.CloseQuietly;
 import com.ricardo.util.DataFormat;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.net.ConnectException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -47,6 +50,12 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorQuarto(Quarto quarto) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        Query query = entityManager.createQuery("SELECT c FROM Reserva c");
+        return query.getResultList();
+
+        /*
+
         PreparedStatement query = null;
         ResultSet rs = null;
         List<Reserva> reservas = new ArrayList<>();
@@ -83,6 +92,7 @@ public class ReservaDAOImpl implements ReservaDAO {
         }
 
         return reservas;
+        */
     }
 
     /**
@@ -94,6 +104,11 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorData(String data) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.data BETWEEN dataInicial AND dataFinal ORDER BY r.numeroQuarto");
+        return query.getResultList();
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         List<Reserva> reservas = new ArrayList<>();
@@ -132,6 +147,7 @@ public class ReservaDAOImpl implements ReservaDAO {
         }
 
         return reservas;
+        */
     }
 
     /**
@@ -141,6 +157,13 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public void inserirReserva(Reserva reserva) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        entityManager.getTransaction().begin();
+        entityManager.persist(reserva);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+
+        /*
         PreparedStatement query = null;
         Connection c = null;
 
@@ -166,6 +189,7 @@ public class ReservaDAOImpl implements ReservaDAO {
             if (c != null)
                 this.conexaoHandler.liberarConexao(c);
         }
+        */
     }
 
     /**
@@ -177,6 +201,11 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorUsuario(Usuario usuario) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.usuarioLogin = '" + usuario.getLogin() + "'");
+        return query.getResultList();
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         List<Reserva> reservas = new ArrayList<>();
@@ -213,5 +242,6 @@ public class ReservaDAOImpl implements ReservaDAO {
         }
 
         return reservas;
+        */
     }
 }
