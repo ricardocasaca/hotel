@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d92ce192-eb0a-4de4-9d74-6af9494f619b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
     </list>
     <ignored path="HotelV4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -638,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466795439133</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modificando os DAOS">
+      <created>1466797855418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1466797855446</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -683,7 +688,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Projeto agora faz uso do maven." />
     <MESSAGE value="QuartoDAO modificado para funcionar com JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuartoDAO modificado para funcionar com JPA" />
+    <MESSAGE value="Modificando os DAOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificando os DAOS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
