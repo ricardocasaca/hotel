@@ -9,18 +9,29 @@ http://java.sun.com/xml/ns/persistence ">
     <persistence-unit name="sqliteunit"
                       transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.ricardo.suites.Quarto</class>
         <exclude-unlisted-classes>
-            true
+            false
         </exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver"
-                      value="org.sqlite.JDBC"/>
+                      value="org.hsqldb.jdbc.JDBCDriver"/>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:hsqldb:file:hotel.db"/>
+                      value="jdbc:hsqldb:file:hotel"/>
+            <property name="javax.persistence.jdbc.user"
+                      value="sa"/>
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.HSQLDialect" />
+            <property name="hbm2ddl.auto" value="create"/>
 
+<!--
+            <property name="hibernate.archive.autodetection" value="class" />
+            <property name="hibernate.dialect" value="com.mysema.query.jpa.support.ExtendedHSQLDialect" />
+            <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver" />
+            <property name="hibernate.connection.url" value="jdbc:hsqldb:file:hotel" />
+            <property name="hibernate.connection.user" value="sa" />
+            <property name="hibernate.flushMode" value="FLUSH_AUTO" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+-->
         </properties>
     </persistence-unit>
 </persistence>

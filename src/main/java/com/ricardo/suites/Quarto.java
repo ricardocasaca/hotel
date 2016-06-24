@@ -1,8 +1,6 @@
 package com.ricardo.suites;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,11 +9,14 @@ import java.util.List;
  * Classe utilizada para representar um quarto.
  */
 @Entity
-@Table(name = "TblQuarto")
 public class Quarto {
     @Id
-    private final String numero;
+    private String numero;
+    @OneToMany(mappedBy = "quarto")
     private List<Reserva> reservas;
+
+    public Quarto() {
+    }
 
     /**
      * Inicializa um Quarto.

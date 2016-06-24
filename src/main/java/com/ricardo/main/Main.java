@@ -1,6 +1,7 @@
 package com.ricardo.main;
 
 import com.ricardo.conexao.ConexaoHandlerHolder;
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.interfaces.*;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.servicos.AutenticacaoServiceImpl;
@@ -18,6 +19,8 @@ import java.io.File;
 class Main {
 
     public static void main(String[] args) {
+        EntityManagerFactorySingleton.getInstance();
+        /*
         File dbFile = new File("hotel.db");
 
         // Se o arquivo da base de dados não existir, cria uma nova.
@@ -25,6 +28,7 @@ class Main {
             CriarTabelasService tabelasService = new CriarTabelasServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
             tabelasService.criarTabelas();
         }
+        */
 
         UsuarioService usuarioService = new UsuarioServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
 

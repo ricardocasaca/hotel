@@ -2,415 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce192-eb0a-4de4-9d74-6af9494f619b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HotelV4.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/ValidacaoHandler/ConstruirValidador.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/ValidacaoHandler/ValidacaoHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/ConexaoHandlerHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/ConexaoHandlerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/Sqlite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/TabelasDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/erro/ErrorStatusHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/erro/PropertiesErroSingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroQuarto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroReserva.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeQuartos.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasPorUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasQuarto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeUsuariosSistema.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/SairMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/AutenticacaoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/BaseDeDados.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ConexaoHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/CriarTabelasService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/OperacaoMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/PromptService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/QuartoDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/QuartoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/StatusErro.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/TabelasDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/Tela.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/UsuarioDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/UsuarioService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/Validador.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/menu/ConstruirMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/menu/ItemMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/menu/MenuImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/promptdecorators/PromptComMensagemErro.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/promptdecorators/PromptDecorator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/resources/msgerros_pt_BR.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/AutenticacaoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/CriarTabelasServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/PromptServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/QuartoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/ReservaServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/UsuarioServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroQuarto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroReserva.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeQuartos.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasPorUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasQuarto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeUsuariosSistema.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/GerenciamentoDeTela.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/Login.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/MenuAdmin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/MenuUsuario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/util/CloseQuietly.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/util/ShaHash.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/util/UserInput.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/PreDefinedValidators.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/SemValidacao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoAlfaNumerico.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoDataFormato.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoDataFutura.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoEspaco.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoIntMenorQue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoIntNaoNegativo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoNulo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoTamanhoInput.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoValorBinario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/validacao/ValidacaoVazio.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/conexao/ConexaoHandlerImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/menu/ItemMenuTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/menu/MenuImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/promptdecorators/PromptComMensagemErroTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/servicos/AutenticacaoServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/servicos/PromptServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/CadastroQuartoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/CadastroReservaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/CadastroUsuarioTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeQuartosTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasDataTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasPorUsuarioTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasQuartoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasUsuarioTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/LoginTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/MenuAdminTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/util/DataFormatTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/util/ShaHashTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/util/UserInputTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoAlfaNumericoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoDataFormatoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoDataFuturaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoEspacoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoIntMenorQueTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoIntNaoNegativoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoNuloTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoTamanhoInputTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoTeste.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoValorBinarioTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoVazioTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Hotel_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/project-template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Hotel.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/mockito-all-1.10.19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/sqlite-jdbc-3.8.11.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/msgerrosteste.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Hotel_jar/Hotel.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/TODO.MD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/ValidacaoHandler/ConstruirValidador.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/ValidacaoHandler/ValidacaoHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/conexao/ConexaoHandlerHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/conexao/ConexaoHandlerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/conexao/Sqlite.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/dataaccess/QuartoDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/dataaccess/ReservaDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/dataaccess/TabelasDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/dataaccess/UsuarioDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/erro/ErrorStatusHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/erro/PropertiesErroSingleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/CadastroQuarto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/CadastroReserva.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/CadastroUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/ExibeQuartos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/ExibeReservasData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/ExibeReservasPorUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/ExibeReservasQuarto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/ExibeReservasUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/ExibeUsuariosSistema.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/funcoesmenu/SairMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/AutenticacaoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/BaseDeDados.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/ConexaoHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/CriarTabelasService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/Menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/OperacaoMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/PromptService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/QuartoDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/QuartoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/ReservaDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/ReservaService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/StatusErro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/TabelasDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/Tela.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/UsuarioDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/UsuarioService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/interfaces/Validador.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/main/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/menu/ConstruirMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/menu/ItemMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/menu/MenuImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/pessoa/Usuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/pessoa/UsuarioSimples.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/promptdecorators/MensagemErro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/promptdecorators/PromptComMensagemErro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/promptdecorators/PromptDecorator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/resources/msgerros_pt_BR.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/AutenticacaoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/AutenticacaoServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/CriarTabelasServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/PromptServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/QuartoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/QuartoServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/ReservaService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/ReservaServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/UsuarioService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/servicos/UsuarioServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/sqlite/QuartoDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/sqlite/ReservaDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/sqlite/TabelasDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/sqlite/UsuarioDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/suites/Quarto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/suites/Reserva.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/CadastroQuarto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/CadastroReserva.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/CadastroUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/ExibeQuartos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/ExibeReservasData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/ExibeReservasPorUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/ExibeReservasQuarto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/ExibeReservasUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/ExibeUsuariosSistema.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/GerenciamentoDeTela.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/Login.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/Menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/MenuAdmin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/tela/MenuUsuario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/util/CloseQuietly.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/util/DataFormat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/util/ShaHash.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/util/UserInput.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/PreDefinedValidators.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/SemValidacao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoAlfaNumerico.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoDataFormato.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoDataFutura.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoEspaco.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoIntMenorQue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoIntNaoNegativo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoNulo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoTamanhoInput.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoValorBinario.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Hotel/com/ricardo/validacao/ValidacaoVazio.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/conexao/ConexaoHandlerImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/menu/ItemMenuTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/menu/MenuImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/promptdecorators/PromptComMensagemErroTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/promptdecorators/PromptComMensagemErroTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/servicos/AutenticacaoServiceImplTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/servicos/AutenticacaoServiceImplTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/servicos/AutenticacaoServiceImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/servicos/PromptServiceImplTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/servicos/PromptServiceImplTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/servicos/PromptServiceImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/CadastroQuartoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/CadastroReservaTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/CadastroUsuarioTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/ExibeQuartosTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/ExibeReservasDataTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/ExibeReservasPorUsuarioTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/ExibeReservasQuartoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/ExibeReservasUsuarioTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/LoginTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/tela/MenuAdminTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/util/DataFormatTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/util/ShaHashTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/util/UserInputTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoAlfaNumericoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoDataFormatoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoDataFuturaTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoEspacoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoIntMenorQueTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoIntNaoNegativoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoNuloTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoTamanhoInputTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoTeste.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoValorBinarioTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Hotel/com/ricardo/validacao/ValidacaoVazioTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TODO.MD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/ValidacaoHandler/ConstruirValidador.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/ValidacaoHandler/ValidacaoHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/conexao/ConexaoHandlerHolder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/conexao/ConexaoHandlerImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/conexao/Sqlite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/dataaccess/QuartoDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/dataaccess/ReservaDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/dataaccess/TabelasDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/dataaccess/UsuarioDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/erro/ErrorStatusHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/erro/PropertiesErroSingleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/CadastroQuarto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/CadastroReserva.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/CadastroUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/ExibeQuartos.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/ExibeReservasData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/ExibeReservasPorUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/ExibeReservasQuarto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/ExibeReservasUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/ExibeUsuariosSistema.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/funcoesmenu/SairMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/AutenticacaoService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/BaseDeDados.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/ConexaoHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/CriarTabelasService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/Menu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/OperacaoMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/PromptService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/QuartoDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/QuartoService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/ReservaDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/ReservaService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/StatusErro.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/TabelasDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/Tela.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/UsuarioDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/UsuarioService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/interfaces/Validador.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/main/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/menu/ConstruirMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/menu/ItemMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/menu/MenuImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/pessoa/Usuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/pessoa/UsuarioSimples.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/promptdecorators/PromptComMensagemErro.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/promptdecorators/PromptDecorator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/resources/msgerros_pt_BR.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/servicos/AutenticacaoServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/servicos/CriarTabelasServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/servicos/PromptServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/servicos/QuartoServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/servicos/ReservaServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/servicos/UsuarioServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/suites/Quarto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/suites/Reserva.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/CadastroQuarto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/CadastroReserva.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/CadastroUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/ExibeQuartos.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/ExibeReservasData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/ExibeReservasPorUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/ExibeReservasQuarto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/ExibeReservasUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/ExibeUsuariosSistema.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/GerenciamentoDeTela.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/Login.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/Menu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/MenuAdmin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/tela/MenuUsuario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/util/CloseQuietly.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/util/DataFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/util/ShaHash.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/util/UserInput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/PreDefinedValidators.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/SemValidacao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoAlfaNumerico.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoDataFormato.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoDataFutura.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoEspaco.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoIntMenorQue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoIntNaoNegativo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoNulo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoStatus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoTamanhoInput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoValorBinario.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ricardo/validacao/ValidacaoVazio.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/conexao/ConexaoHandlerImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/menu/ItemMenuTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/menu/MenuImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/promptdecorators/PromptComMensagemErroTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/servicos/AutenticacaoServiceImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/servicos/PromptServiceImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/CadastroQuartoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/CadastroReservaTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/CadastroUsuarioTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/ExibeQuartosTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/ExibeReservasDataTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/ExibeReservasPorUsuarioTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/ExibeReservasQuartoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/ExibeReservasUsuarioTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/LoginTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/tela/MenuAdminTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/util/DataFormatTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/util/ShaHashTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/util/UserInputTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoAlfaNumericoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoDataFormatoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoDataFuturaTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoEspacoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoIntMenorQueTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoIntNaoNegativoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoNuloTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoTamanhoInputTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoTeste.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoValorBinarioTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/ricardo/validacao/ValidacaoVazioTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotel.db" afterPath="$PROJECT_DIR$/hotel.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelV4.iml" afterPath="$PROJECT_DIR$/HotelV4.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
     </list>
     <ignored path="HotelV4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -433,63 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityManagerFactorySingleton.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="119" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="119" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QuartoDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quarto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java">
+      <file leaf-file-name="ReservaDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TabelasDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/TabelasDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="28" />
+            <state relative-caret-position="72">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -519,10 +80,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroUsuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -583,6 +148,206 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricardo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricardo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricardo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pessoa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricardo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricardo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataaccess" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -866,29 +631,37 @@
       <option name="presentableId" value="Default" />
       <updated>1466448775459</updated>
     </task>
+    <task id="LOCAL-00001" summary="Projeto agora faz uso do maven.">
+      <created>1466780028239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466780028239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -906,6 +679,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Projeto agora faz uso do maven." />
+    <option name="LAST_COMMIT_MESSAGE" value="Projeto agora faz uso do maven." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,7 +719,7 @@
         <state relative-caret-position="180">
           <caret line="12" column="119" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="119" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -984,7 +761,7 @@
         <state relative-caret-position="180">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1091,13 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="34" column="94" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/teste.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/conexao/Sqlite.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1106,53 +876,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="119" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/TabelasDAOImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/mapping/SimpleValue.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="128">
+          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="119" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="119" />
+        <state relative-caret-position="180">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/TabelasDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

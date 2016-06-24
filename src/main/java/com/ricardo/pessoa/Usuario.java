@@ -1,13 +1,17 @@
 package com.ricardo.pessoa;
 
+import javax.persistence.*;
 import java.util.Objects;
 
 /**
  * Created by ricardo on 01/06/16.
  * Classe responsável por definir o comportamento e estado pertinente a todos os usuários por padrão.
  */
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Usuario {
     private String nome;
+    @Id
     private String login;
     private String hashSenha;
     private boolean isAdmin;

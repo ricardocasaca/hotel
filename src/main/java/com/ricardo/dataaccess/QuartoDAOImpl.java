@@ -48,7 +48,7 @@ public class QuartoDAOImpl implements QuartoDAO {
     @Override
     public List<Quarto> getAllQuartos() {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT c FROM TblQuarto c");
+        Query query = entityManager.createQuery("SELECT c FROM Quarto c");
         return query.getResultList();
 
         /*
@@ -95,6 +95,10 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public Quarto getQuartoPorNumero(String numero) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        return entityManager.find(Quarto.class, numero);
+
+        /*
         PreparedStatement query = null;
         ResultSet rs = null;
         Quarto quarto = null;
@@ -126,6 +130,7 @@ public class QuartoDAOImpl implements QuartoDAO {
         }
 
         return quarto;
+        */
     }
 
     /**
@@ -135,6 +140,13 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public void inserirQuarto(Quarto quarto) {
+        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
+        entityManager.getTransaction().begin();
+        entityManager.persist(quarto);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+
+        /*
         PreparedStatement query = null;
         Connection c = null;
 
@@ -156,5 +168,6 @@ public class QuartoDAOImpl implements QuartoDAO {
             if (c != null)
                 this.conexaoHandler.liberarConexao(c);
         }
+        */
     }
 }
