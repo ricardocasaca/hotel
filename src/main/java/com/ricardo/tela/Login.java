@@ -1,18 +1,17 @@
 package com.ricardo.tela;
 
-import com.ricardo.conexao.ConexaoHandlerHolder;
-import com.ricardo.interfaces.*;
+import com.ricardo.interfaces.AutenticacaoService;
+import com.ricardo.interfaces.PromptService;
+import com.ricardo.interfaces.Tela;
+import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.pessoa.UsuarioSimples;
 import com.ricardo.promptdecorators.PromptComMensagemErro;
-import com.ricardo.servicos.AutenticacaoServiceImpl;
 import com.ricardo.servicos.PromptServiceImpl;
-import com.ricardo.servicos.UsuarioServiceImpl;
 import com.ricardo.util.ShaHash;
 import com.ricardo.util.UserInput;
 import com.ricardo.validacao.PreDefinedValidators;
 
-import java.sql.Connection;
 import java.util.Objects;
 
 /**

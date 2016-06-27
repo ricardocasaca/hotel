@@ -1,6 +1,5 @@
 package com.ricardo.funcoesmenu;
 
-import com.ricardo.conexao.ConexaoHandlerHolder;
 import com.ricardo.interfaces.OperacaoMenu;
 import com.ricardo.interfaces.PromptService;
 import com.ricardo.interfaces.QuartoService;
@@ -11,7 +10,6 @@ import com.ricardo.servicos.QuartoServiceImpl;
 import com.ricardo.servicos.ReservaServiceImpl;
 import com.ricardo.tela.GerenciamentoDeTela;
 import com.ricardo.util.UserInput;
-import com.ricardo.validacao.PreDefinedValidators;
 
 import java.util.Objects;
 

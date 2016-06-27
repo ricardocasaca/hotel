@@ -6,7 +6,6 @@ import com.ricardo.interfaces.Validador;
 import com.ricardo.validacao.ValidacaoException;
 
 import java.util.Objects;
-import java.util.logging.Level;
 
 /**
  * Created by ricardo on 29/05/16.

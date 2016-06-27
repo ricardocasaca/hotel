@@ -1,25 +1,25 @@
 package com.ricardo.servicos;
 
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.ReservaDAOImpl;
-import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.ReservaDAO;
 import com.ricardo.interfaces.ReservaService;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
 
+import javax.persistence.EntityManagerFactory;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by ricardo on 24/05/16.
  * Classe de serviço responsável por realizar operações referentes a reserva.
  */
 public class ReservaServiceImpl implements ReservaService {
-    private final ReservaDAO reservaDAO;
+    private EntityManagerFactory entityManagerFactory;
 
     public ReservaServiceImpl() {
-        this.reservaDAO = new ReservaDAOImpl();
+        this.entityManagerFactory = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory();
     }
 
     /**
@@ -30,7 +30,8 @@ public class ReservaServiceImpl implements ReservaService {
      */
     @Override
     public List<Reserva> getReservasPorQuarto(Quarto q) {
-        return this.reservaDAO.getReservasPorQuarto(q);
+        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        return rDAO.getReservasPorQuarto(q);
     }
 
     /**
@@ -41,7 +42,8 @@ public class ReservaServiceImpl implements ReservaService {
      */
     @Override
     public List<Reserva> getReservasPorData(String data) {
-        return this.reservaDAO.getReservasPorData(data);
+        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        return rDAO.getReservasPorData(data);
     }
 
     /**
@@ -50,7 +52,10 @@ public class ReservaServiceImpl implements ReservaService {
      * @param r Referência para a reserva a ser cadastrada.
      */
     @Override
-    public void setReserva(Reserva r) { this.reservaDAO.inserirReserva(r); }
+    public void setReserva(Reserva r) {
+        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        rDAO.inserirReserva(r);
+    }
 
     /**
      * Busca todas as reservas para um usuário específico.
@@ -59,5 +64,8 @@ public class ReservaServiceImpl implements ReservaService {
      * @return Lista contendo as reservas ou lista vazia caso nenhuma for encontrada.
      */
     @Override
-    public List<Reserva> getReservasPorUsuario(Usuario u) { return this.reservaDAO.getReservasPorUsuario(u); }
+    public List<Reserva> getReservasPorUsuario(Usuario u) {
+        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        return rDAO.getReservasPorUsuario(u);
+    }
 }

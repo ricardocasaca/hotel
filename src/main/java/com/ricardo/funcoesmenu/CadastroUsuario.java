@@ -1,6 +1,5 @@
 package com.ricardo.funcoesmenu;
 
-import com.ricardo.conexao.ConexaoHandlerHolder;
 import com.ricardo.interfaces.OperacaoMenu;
 import com.ricardo.interfaces.PromptService;
 import com.ricardo.interfaces.UsuarioService;

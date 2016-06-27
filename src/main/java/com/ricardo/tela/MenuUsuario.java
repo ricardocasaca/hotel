@@ -4,12 +4,7 @@ import com.ricardo.funcoesmenu.SairMenu;
 import com.ricardo.interfaces.PromptService;
 import com.ricardo.interfaces.Tela;
 import com.ricardo.menu.ConstruirMenu;
-import com.ricardo.menu.MenuImpl;
 import com.ricardo.pessoa.Usuario;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Created by ricardo on 27/05/16.

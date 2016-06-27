@@ -1,23 +1,23 @@
 package com.ricardo.servicos;
 
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.UsuarioDAOImpl;
-import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.UsuarioDAO;
 import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 
+import javax.persistence.EntityManagerFactory;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by ricardo on 25/05/16.
  * Classe de serviço responsável por realizar operações referentes a usuário.
  */
 public class UsuarioServiceImpl implements UsuarioService {
-    private final UsuarioDAO usuarioDAO;
+    private EntityManagerFactory entityManagerFactory;
 
     public UsuarioServiceImpl() {
-        this.usuarioDAO = new UsuarioDAOImpl();
+        this.entityManagerFactory = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory();
     }
 
     /**
@@ -27,7 +27,10 @@ public class UsuarioServiceImpl implements UsuarioService {
      * @return Referência para usuário. Nulo caso não encontre.
      */
     @Override
-    public Usuario getUsuarioPorLogin(String login) { return this.usuarioDAO.getUsuarioPorLogin(login); }
+    public Usuario getUsuarioPorLogin(String login) {
+        UsuarioDAO uDAO = new UsuarioDAOImpl(entityManagerFactory.createEntityManager());
+        return uDAO.getUsuarioPorLogin(login);
+    }
 
     /**
      * Busca todos os usuários do sistema.
@@ -36,7 +39,8 @@ public class UsuarioServiceImpl implements UsuarioService {
      */
     @Override
     public List<Usuario> getUsuariosSistema() {
-        return this.usuarioDAO.getUsuariosSistema();
+        UsuarioDAO uDAO = new UsuarioDAOImpl(entityManagerFactory.createEntityManager());
+        return uDAO.getUsuariosSistema();
     }
 
     /**
@@ -47,7 +51,8 @@ public class UsuarioServiceImpl implements UsuarioService {
      */
     @Override
     public boolean existeUsuario(Usuario u) {
-        return this.usuarioDAO.existeUsuario(u.getLogin());
+        UsuarioDAO uDAO = new UsuarioDAOImpl(entityManagerFactory.createEntityManager());
+        return uDAO.existeUsuario(u.getLogin());
     }
 
     /**
@@ -57,7 +62,8 @@ public class UsuarioServiceImpl implements UsuarioService {
      */
     @Override
     public boolean existeAdmin() {
-        return this.usuarioDAO.existeAdmin();
+        UsuarioDAO uDAO = new UsuarioDAOImpl(entityManagerFactory.createEntityManager());
+        return uDAO.existeAdmin();
     }
 
     /**
@@ -67,6 +73,7 @@ public class UsuarioServiceImpl implements UsuarioService {
      */
     @Override
     public void cadastrarUsuario(Usuario u) {
-        this.usuarioDAO.inserirUsuario(u);
+        UsuarioDAO uDAO = new UsuarioDAOImpl(entityManagerFactory.createEntityManager());
+        uDAO.inserirUsuario(u);
     }
 }

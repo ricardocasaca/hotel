@@ -1,24 +1,15 @@
 package com.ricardo.dataaccess;
 
 import com.ricardo.conexao.EntityManagerFactorySingleton;
-import com.ricardo.interfaces.ConexaoHandler;
-import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.interfaces.ReservaDAO;
-import com.ricardo.interfaces.UsuarioDAO;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
-import com.ricardo.util.CloseQuietly;
-import com.ricardo.util.DataFormat;
 
+import javax.persistence.EntityExistsException;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import java.net.ConnectException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+import javax.persistence.TransactionRequiredException;
 import java.util.List;
 import java.util.Objects;
 
@@ -29,6 +20,12 @@ import java.util.Objects;
  * a uma reserva.
  */
 public class ReservaDAOImpl implements ReservaDAO {
+    private EntityManager entityManager;
+
+    public ReservaDAOImpl(EntityManager eM) {
+        this.entityManager = Objects.requireNonNull(eM, this.getClass().getName() + ": Argumento EntityManager nulo no construtor");
+    }
+
     /**
      * Retorna todas as reservas registradas para o quarto indicado.
      *
@@ -38,8 +35,14 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorQuarto(Quarto quarto) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT c FROM Reserva c");
+        Query query = null;
+
+        try {
+            query = entityManager.createQuery("SELECT c FROM Reserva c");
+        }catch (IllegalArgumentException e){
+
+        }
+
         return query.getResultList();
     }
 
@@ -52,8 +55,14 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorData(String data) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.data BETWEEN dataInicial AND dataFinal ORDER BY r.numeroQuarto");
+        Query query = null;
+
+        try {
+            query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.data BETWEEN dataInicial AND dataFinal ORDER BY r.numeroQuarto");
+        }catch (IllegalArgumentException e){
+
+        }
+
         return query.getResultList();
     }
 
@@ -64,11 +73,17 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public void inserirReserva(Reserva reserva) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.persist(reserva);
-        entityManager.getTransaction().commit();
-        entityManager.close();
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.persist(reserva);
+            entityManager.getTransaction().commit();
+        }catch (EntityExistsException e){
+
+        }catch (IllegalArgumentException e){
+
+        }catch (TransactionRequiredException e){
+
+        }
     }
 
     /**
@@ -80,8 +95,14 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorUsuario(Usuario usuario) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.usuario = '" + usuario.getLogin() + "'");
+        Query query = null;
+
+        try {
+            query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.usuario = '" + usuario.getLogin() + "'");
+        }catch (IllegalArgumentException e){
+
+        }
+
         return query.getResultList();
     }
 }

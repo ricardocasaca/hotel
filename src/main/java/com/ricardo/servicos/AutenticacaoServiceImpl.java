@@ -12,16 +12,9 @@ import java.util.Objects;
  * Classe responsável por autenticar um usuário no sistema.
  */
 public class AutenticacaoServiceImpl implements AutenticacaoService {
-    private ConexaoHandler conexaoHandler;
     private UsuarioService usuarioService;
 
-    /**
-     * Inicializa um AutenticacaoService.
-     *
-     * @param conexaoHandler ConexaoHandler para gerenciar as conexões.
-     */
-    public AutenticacaoServiceImpl(ConexaoHandler conexaoHandler, UsuarioService uS) {
-        this.conexaoHandler = Objects.requireNonNull(conexaoHandler, this.getClass().getName() + ": Parametro de conexao nulo.");
+    public AutenticacaoServiceImpl(UsuarioService uS) {
         this.usuarioService = Objects.requireNonNull(uS, this.getClass().getName() + ": UsuarioService nulo.");
     }
 

@@ -1,10 +1,9 @@
 package com.ricardo.validacao;
 
-import com.ricardo.interfaces.StatusErro;
-import com.ricardo.interfaces.Validador;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by ricardo on 14/06/16.

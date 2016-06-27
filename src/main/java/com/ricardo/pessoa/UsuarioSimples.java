@@ -1,7 +1,6 @@
 package com.ricardo.pessoa;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
 
 /**
  * Created by ricardo on 16/05/16.

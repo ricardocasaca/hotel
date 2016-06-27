@@ -7,9 +7,7 @@ import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.pessoa.UsuarioSimples;
 import com.ricardo.promptdecorators.PromptComMensagemErro;
-import com.ricardo.servicos.PromptServiceImpl;
 import com.ricardo.suites.Reserva;
-import com.ricardo.util.UserInput;
 import com.ricardo.validacao.PreDefinedValidators;
 
 import java.util.List;

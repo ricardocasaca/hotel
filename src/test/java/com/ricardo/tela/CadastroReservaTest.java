@@ -5,7 +5,6 @@ import com.ricardo.interfaces.QuartoService;
 import com.ricardo.interfaces.ReservaService;
 import com.ricardo.interfaces.Tela;
 import com.ricardo.pessoa.Usuario;
-import com.ricardo.pessoa.UsuarioSimples;
 import com.ricardo.suites.Quarto;
 import org.junit.Before;
 import org.junit.Rule;
@@ -14,7 +13,6 @@ import org.junit.rules.ExpectedException;
 
 import java.text.ParseException;
 
-import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 

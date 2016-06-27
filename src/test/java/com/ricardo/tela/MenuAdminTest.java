@@ -5,11 +5,8 @@ import com.ricardo.interfaces.Tela;
 import com.ricardo.pessoa.Usuario;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by ricardo on 14/06/16.

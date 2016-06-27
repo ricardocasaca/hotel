@@ -5,9 +5,7 @@ import com.ricardo.interfaces.PromptService;
 import com.ricardo.interfaces.ReservaService;
 import com.ricardo.interfaces.Tela;
 import com.ricardo.promptdecorators.PromptComMensagemErro;
-import com.ricardo.servicos.PromptServiceImpl;
 import com.ricardo.suites.Reserva;
-import com.ricardo.util.UserInput;
 import com.ricardo.validacao.ValidacaoDataFormato;
 
 import java.util.List;

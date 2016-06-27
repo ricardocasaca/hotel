@@ -1,23 +1,14 @@
 package com.ricardo.dataaccess;
 
 import com.ricardo.conexao.EntityManagerFactorySingleton;
-import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.QuartoDAO;
-import com.ricardo.interfaces.ReservaDAO;
 import com.ricardo.suites.Quarto;
-import com.ricardo.util.CloseQuietly;
-import org.hibernate.Session;
 
+import javax.persistence.EntityExistsException;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import java.net.ConnectException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+import javax.persistence.TransactionRequiredException;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * @author Ricardo Casaca
@@ -27,6 +18,12 @@ import java.util.Objects;
  */
 
 public class QuartoDAOImpl implements QuartoDAO {
+    private EntityManager entityManager;
+
+    public QuartoDAOImpl(EntityManager eM) {
+        this.entityManager = eM;
+    }
+
     /**
      * Busca todos os quartos cadastrados no sistema.
      *
@@ -35,8 +32,14 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public List<Quarto> getAllQuartos() {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT c FROM Quarto c");
+        Query query = null;
+
+        try {
+            query = entityManager.createQuery("SELECT c FROM Quarto c");
+        }catch (IllegalArgumentException e){
+
+        }
+
         return query.getResultList();
     }
 
@@ -48,8 +51,15 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public Quarto getQuartoPorNumero(String numero) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        return entityManager.find(Quarto.class, numero);
+        Quarto q = null;
+
+        try {
+            q = entityManager.find(Quarto.class, numero);
+        }catch (IllegalArgumentException e){
+
+        }
+
+        return q;
     }
 
     /**
@@ -59,10 +69,16 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public void inserirQuarto(Quarto quarto) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.persist(quarto);
-        entityManager.getTransaction().commit();
-        entityManager.close();
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.persist(quarto);
+            entityManager.getTransaction().commit();
+        }catch (EntityExistsException e){
+
+        }catch (IllegalArgumentException e){
+
+        }catch (TransactionRequiredException e){
+
+        }
     }
 }

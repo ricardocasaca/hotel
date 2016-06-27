@@ -2,22 +2,17 @@ package com.ricardo.conexao;
 
 import com.ricardo.interfaces.BaseDeDados;
 import com.ricardo.interfaces.ConexaoHandler;
-import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import org.mockito.internal.verification.Times;
 
 import java.net.ConnectException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.anyObject;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by ricardo on 06/06/16.

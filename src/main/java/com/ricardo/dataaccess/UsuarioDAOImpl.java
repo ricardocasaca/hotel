@@ -1,23 +1,12 @@
 package com.ricardo.dataaccess;
 
 import com.ricardo.conexao.EntityManagerFactorySingleton;
-import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.UsuarioDAO;
 import com.ricardo.pessoa.Usuario;
-import com.ricardo.pessoa.UsuarioSimples;
-import com.ricardo.suites.Quarto;
 import com.ricardo.util.CloseQuietly;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import java.net.ConnectException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+import javax.persistence.*;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by ricardo on 24/05/16.
@@ -26,6 +15,12 @@ import java.util.Objects;
  * a um usuário.
  */
 public class UsuarioDAOImpl implements UsuarioDAO {
+    private EntityManager entityManager;
+
+    public UsuarioDAOImpl(EntityManager eM) {
+        this.entityManager = eM;
+    }
+
     /**
      * Busca usuário pelo login.
      *
@@ -34,8 +29,15 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public Usuario getUsuarioPorLogin(String login) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        return entityManager.find(Usuario.class, login);
+        Usuario u = null;
+
+        try{
+            u = entityManager.find(Usuario.class, login);
+        }catch(IllegalArgumentException e){
+
+        }
+
+        return u;
     }
 
     /**
@@ -45,8 +47,14 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public List<Usuario> getUsuariosSistema() {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT u FROM Usuario u");
+        Query query = null;
+
+        try {
+            query = entityManager.createQuery("SELECT u FROM Usuario u");
+        }catch (IllegalArgumentException e){
+
+        }
+
         return query.getResultList();
     }
 
@@ -57,10 +65,15 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public boolean existeAdmin() {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.isAdmin = 1");
+        TypedQuery<Long> query = null;
 
-        return query.getResultList().size() > 0;
+        try {
+            query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.isAdmin = 1", Long.class);
+        }catch (IllegalArgumentException e){
+
+        }
+
+        return query.getSingleResult() > 0;
     }
 
     /**
@@ -71,10 +84,16 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public boolean existeUsuario(String login) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.login = :login");
-        query.setParameter("login", login);
-        return query.getResultList().size() > 0;
+        TypedQuery<Long> query = null;
+
+        try {
+            query = entityManager.createQuery("SELECT COUNT(*) FROM Usuario u WHERE u.login = :login", Long.class);
+            query = query.setParameter("login", login);
+        }catch (IllegalArgumentException e){
+
+        }
+
+        return query.getSingleResult() > 0;
     }
 
     /**
@@ -84,10 +103,16 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public void inserirUsuario(Usuario usuario) {
-        EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.persist(usuario);
-        entityManager.getTransaction().commit();
-        entityManager.close();
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.persist(usuario);
+            entityManager.getTransaction().commit();
+        }catch (EntityExistsException e){
+
+        }catch (IllegalArgumentException e){
+
+        }catch (TransactionRequiredException e){
+
+        }
     }
 }

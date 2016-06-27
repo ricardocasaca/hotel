@@ -2,7 +2,6 @@ package com.ricardo.promptdecorators;
 
 import com.ricardo.interfaces.PromptService;
 import com.ricardo.interfaces.Validador;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 

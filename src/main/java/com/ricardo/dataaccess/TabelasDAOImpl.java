@@ -4,7 +4,6 @@ import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.TabelasDAO;
 import com.ricardo.util.CloseQuietly;
 
-import java.net.ConnectException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;

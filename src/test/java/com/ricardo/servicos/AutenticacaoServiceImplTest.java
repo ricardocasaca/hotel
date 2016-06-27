@@ -1,12 +1,10 @@
 package com.ricardo.servicos;
 
-import com.ricardo.conexao.ConexaoHandlerHolder;
 import com.ricardo.interfaces.AutenticacaoService;
 import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.pessoa.UsuarioSimples;
-import com.ricardo.util.ShaHash;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -67,6 +65,6 @@ public class AutenticacaoServiceImplTest {
         this.usuarioService = mock(UsuarioService.class);
         this.conexaoHandler = mock(ConexaoHandler.class);
         this.usuario = mock(UsuarioSimples.class);
-        this.autenticacaoService = new AutenticacaoServiceImpl(this.conexaoHandler, this.usuarioService);
+        this.autenticacaoService = new AutenticacaoServiceImpl(this.usuarioService);
     }
 }

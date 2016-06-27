@@ -6,10 +6,11 @@ import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.pessoa.UsuarioSimples;
 import com.ricardo.promptdecorators.PromptComMensagemErro;
-import com.ricardo.servicos.PromptServiceImpl;
 import com.ricardo.util.ShaHash;
-import com.ricardo.util.UserInput;
-import com.ricardo.validacao.*;
+import com.ricardo.validacao.PreDefinedValidators;
+import com.ricardo.validacao.SemValidacao;
+import com.ricardo.validacao.ValidacaoValorBinario;
+import com.ricardo.validacao.ValidacaoVazio;
 
 import java.util.Objects;
 

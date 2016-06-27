@@ -1,23 +1,23 @@
 package com.ricardo.servicos;
 
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.QuartoDAOImpl;
-import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.interfaces.QuartoService;
 import com.ricardo.suites.Quarto;
 
+import javax.persistence.EntityManagerFactory;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * @author Ricardo Freire Casaca
  *         Classe de serviço responsável por realizar operações referentes a um quarto.
  */
 public class QuartoServiceImpl implements QuartoService {
-    private final QuartoDAO quartoDAO;
+    private EntityManagerFactory entityManagerFactory;
 
     public QuartoServiceImpl() {
-        this.quartoDAO = new QuartoDAOImpl();
+        this.entityManagerFactory = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory();
     }
 
     /**
@@ -26,7 +26,10 @@ public class QuartoServiceImpl implements QuartoService {
      * @return Lista contendo os quartos encontrados. Ou lista vazia caso não encontrar nenhum quarto.
      */
     @Override
-    public List<Quarto> getQuartos() { return this.quartoDAO.getAllQuartos(); }
+    public List<Quarto> getQuartos() {
+        QuartoDAO qDAO = new QuartoDAOImpl(entityManagerFactory.createEntityManager());
+        return qDAO.getAllQuartos();
+    }
 
     /**
      * Cadastra um quarto no sistema.
@@ -34,7 +37,10 @@ public class QuartoServiceImpl implements QuartoService {
      * @param quarto Referência para o quarto a ser cadastrado.
      */
     @Override
-    public void cadastrarQuarto(Quarto quarto) { this.quartoDAO.inserirQuarto(quarto); }
+    public void cadastrarQuarto(Quarto quarto) {
+        QuartoDAO qDAO = new QuartoDAOImpl(entityManagerFactory.createEntityManager());
+        qDAO.inserirQuarto(quarto);
+    }
 
     /**
      * Verifica se existe um quarto específico no sistema.
@@ -44,6 +50,7 @@ public class QuartoServiceImpl implements QuartoService {
      */
     @Override
     public boolean existeQuarto(Quarto quarto) {
-        return this.quartoDAO.getQuartoPorNumero(quarto.getNumero()) != null;
+        QuartoDAO qDAO = new QuartoDAOImpl(entityManagerFactory.createEntityManager());
+        return qDAO.getQuartoPorNumero(quarto.getNumero()) != null;
     }
 }
