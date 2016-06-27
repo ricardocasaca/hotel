@@ -30,7 +30,7 @@ class Main {
         }
         */
 
-        UsuarioService usuarioService = new UsuarioServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        UsuarioService usuarioService = new UsuarioServiceImpl();
 
         // Se não houver pelo menos 1 admin cadastrado, abre menu para cadastrar.
         if (!usuarioService.existeAdmin()) {
@@ -42,8 +42,8 @@ class Main {
 
         PromptService promptService = new PromptServiceImpl(new UserInput());
         ConexaoHandler conexaoHandler = ConexaoHandlerHolder.getInstance().getSqliteConHandler();
-        AutenticacaoService autenticacaoService = new AutenticacaoServiceImpl(conexaoHandler, new UsuarioServiceImpl(conexaoHandler));
-        UsuarioService uS = new UsuarioServiceImpl(conexaoHandler);
+        AutenticacaoService autenticacaoService = new AutenticacaoServiceImpl(conexaoHandler, new UsuarioServiceImpl());
+        UsuarioService uS = new UsuarioServiceImpl();
         GerenciamentoDeTela gT = new GerenciamentoDeTela();
 
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new Login(promptService, autenticacaoService, uS, gT));

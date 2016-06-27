@@ -16,14 +16,8 @@ import java.util.Objects;
 public class QuartoServiceImpl implements QuartoService {
     private final QuartoDAO quartoDAO;
 
-    /**
-     * Inicializa um serviço QuartoService.
-     *
-     * @param conexaoHandler Referência para ConexaoHandler utilizado para gerenciar as conexões.
-     */
-    public QuartoServiceImpl(ConexaoHandler conexaoHandler) {
-        Objects.requireNonNull(conexaoHandler, "Parametro de conexão nulo em QuartoServiceImpl");
-        this.quartoDAO = new QuartoDAOImpl(conexaoHandler);
+    public QuartoServiceImpl() {
+        this.quartoDAO = new QuartoDAOImpl();
     }
 
     /**

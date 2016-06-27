@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
  */
 public class PropertiesErroSingleton {
     private static final PropertiesErroSingleton pES = new PropertiesErroSingleton();
-    private static final ResourceBundle rB = ResourceBundle.getBundle("com.ricardo.resources/msgerros", Locale.getDefault());
+    private static final ResourceBundle rB = ResourceBundle.getBundle("msgerros", Locale.getDefault());
 
     private PropertiesErroSingleton(){}
 

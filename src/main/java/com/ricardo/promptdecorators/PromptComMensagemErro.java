@@ -40,8 +40,7 @@ public class PromptComMensagemErro extends PromptDecorator {
                 userInput = promptService.getUserData(texto);
             } catch (ValidacaoException e) {
                 ok = false;
-                log.log(Level.SEVERE, PropertiesErroSingleton.getInstance().getProp().getString(e.getErro().getCodigo())); // PropertiesErro.getMensagemErro(e.getErro().getCodigo())
-                //System.out.println(PropertiesErro.getMensagemErro(e.getErro().getCodigo())); // TODO: Não é pra printar na tela porque é custoso mas essa merda de log não é flexivel
+                System.out.println(PropertiesErroSingleton.getInstance().getProp().getString(e.getErro().getCodigo())); // TODO: Não é pra printar na tela porque é custoso mas essa merda de log não é flexivel
             }
         } while (!ok);
 

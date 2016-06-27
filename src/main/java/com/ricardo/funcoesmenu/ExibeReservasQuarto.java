@@ -20,8 +20,8 @@ public class ExibeReservasQuarto implements OperacaoMenu {
     @Override
     public void executar() {
         PromptService p = new PromptServiceImpl(new UserInput());
-        ReservaService rS = new ReservaServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
-        QuartoService qS = new QuartoServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        ReservaService rS = new ReservaServiceImpl();
+        QuartoService qS = new QuartoServiceImpl();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.ExibeReservasQuarto(rS, qS, p));
         gerenciamentoDeTela.exibirTela();
     }

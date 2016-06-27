@@ -20,7 +20,7 @@ public class CadastroQuarto implements OperacaoMenu {
     public void executar() {
         PromptService promptService = new PromptServiceImpl(PreDefinedValidators.getValidadorQuarto(), new UserInput());
         promptService = new PromptComMensagemErro(promptService);
-        QuartoService quartoService = new QuartoServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        QuartoService quartoService = new QuartoServiceImpl();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.CadastroQuarto(promptService, quartoService));
         gerenciamentoDeTela.exibirTela();
     }

@@ -18,14 +18,8 @@ import java.util.Objects;
 public class ReservaServiceImpl implements ReservaService {
     private final ReservaDAO reservaDAO;
 
-    /**
-     * Inicializa um serviço ReservaService.
-     *
-     * @param conexaoHandler Referência para ConexaoHandler responsável por gerenciar as conexões.
-     */
-    public ReservaServiceImpl(ConexaoHandler conexaoHandler) {
-        Objects.requireNonNull(conexaoHandler, "Parametro de conexão nulo em ReservaServiceImpl");
-        this.reservaDAO = new ReservaDAOImpl(conexaoHandler);
+    public ReservaServiceImpl() {
+        this.reservaDAO = new ReservaDAOImpl();
     }
 
     /**

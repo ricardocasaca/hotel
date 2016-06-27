@@ -14,7 +14,7 @@ import com.ricardo.tela.GerenciamentoDeTela;
 public class ExibeUsuariosSistema implements OperacaoMenu {
     @Override
     public void executar() {
-        UsuarioService uS = new UsuarioServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        UsuarioService uS = new UsuarioServiceImpl();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.ExibeUsuariosSistema(uS));
         gerenciamentoDeTela.exibirTela();
     }

@@ -27,18 +27,6 @@ import java.util.Objects;
  */
 
 public class QuartoDAOImpl implements QuartoDAO {
-    private ConexaoHandler conexaoHandler;
-
-    /**
-     * Inicializa um QuartoDAO
-     *
-     * @param conexaoHandler ConexaoHandler utilizado para gerenciar a conexão.
-     */
-    public QuartoDAOImpl(ConexaoHandler conexaoHandler) {
-        Objects.requireNonNull(conexaoHandler, "Conexão nula em QuartoDAOImpl.");
-        this.conexaoHandler = conexaoHandler;
-    }
-
     /**
      * Busca todos os quartos cadastrados no sistema.
      *
@@ -50,41 +38,6 @@ public class QuartoDAOImpl implements QuartoDAO {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
         Query query = entityManager.createQuery("SELECT c FROM Quarto c");
         return query.getResultList();
-
-        /*
-        PreparedStatement query = null;
-        ResultSet rs = null;
-        List<Quarto> quartos = new ArrayList<>();
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("SELECT * FROM TblQuarto;");
-            rs = query.executeQuery();
-
-            while (rs.next()) {
-                String numQuarto = rs.getString("numero");
-                Quarto quarto = new Quarto(numQuarto);
-                quartos.add(quarto);
-            }
-
-            return quartos;
-        } catch (ConnectException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } finally {
-            CloseQuietly.close(query);
-            CloseQuietly.close(rs);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-
-        return quartos;
-        */
     }
 
     /**
@@ -97,40 +50,6 @@ public class QuartoDAOImpl implements QuartoDAO {
     public Quarto getQuartoPorNumero(String numero) {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
         return entityManager.find(Quarto.class, numero);
-
-        /*
-        PreparedStatement query = null;
-        ResultSet rs = null;
-        Quarto quarto = null;
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("SELECT * FROM TblQuarto WHERE numero = ?;");
-            query.setString(1, numero);
-            rs = query.executeQuery();
-
-            if (rs.next()) {
-                ReservaDAO reservaDAO = new ReservaDAOImpl(this.conexaoHandler);
-                quarto = new Quarto(numero);
-                quarto.setReservas(reservaDAO.getReservasPorQuarto(quarto));
-            }
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (ConnectException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } finally {
-            CloseQuietly.close(query);
-            CloseQuietly.close(rs);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-
-        return quarto;
-        */
     }
 
     /**
@@ -145,29 +64,5 @@ public class QuartoDAOImpl implements QuartoDAO {
         entityManager.persist(quarto);
         entityManager.getTransaction().commit();
         entityManager.close();
-
-        /*
-        PreparedStatement query = null;
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("INSERT INTO TblQuarto (numero) VALUES (?);");
-            query.setString(1, quarto.getNumero());
-            query.execute();
-            c.commit();
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (ConnectException e) {
-            e.printStackTrace();
-        } finally {
-            CloseQuietly.close(query);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-        */
     }
 }

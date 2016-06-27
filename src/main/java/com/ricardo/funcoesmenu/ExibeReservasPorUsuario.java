@@ -18,8 +18,8 @@ import com.ricardo.util.UserInput;
  */
 public class ExibeReservasPorUsuario implements OperacaoMenu {
     PromptService p = new PromptServiceImpl(new UserInput());
-    ReservaService rS = new ReservaServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
-    UsuarioService uS = new UsuarioServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+    ReservaService rS = new ReservaServiceImpl();
+    UsuarioService uS = new UsuarioServiceImpl();
 
     @Override
     public void executar() {

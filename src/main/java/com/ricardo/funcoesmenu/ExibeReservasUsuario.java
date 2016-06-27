@@ -21,7 +21,7 @@ public class ExibeReservasUsuario implements OperacaoMenu {
 
     @Override
     public void executar() {
-        ReservaService rS = new ReservaServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        ReservaService rS = new ReservaServiceImpl();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.ExibeReservasUsuario(this.usuario, rS));
         gerenciamentoDeTela.exibirTela();
     }

@@ -29,18 +29,6 @@ import java.util.Objects;
  * a uma reserva.
  */
 public class ReservaDAOImpl implements ReservaDAO {
-    private ConexaoHandler conexaoHandler;
-
-    /**
-     * Inicializa um ReservaDAO.
-     *
-     * @param conexaoHandler ConexaoHandler utilizado para gerenciar as conexões.
-     */
-    public ReservaDAOImpl(ConexaoHandler conexaoHandler) {
-        Objects.requireNonNull(conexaoHandler, "Conexão nula em QuartoDAOImpl.");
-        this.conexaoHandler = conexaoHandler;
-    }
-
     /**
      * Retorna todas as reservas registradas para o quarto indicado.
      *
@@ -53,46 +41,6 @@ public class ReservaDAOImpl implements ReservaDAO {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
         Query query = entityManager.createQuery("SELECT c FROM Reserva c");
         return query.getResultList();
-
-        /*
-
-        PreparedStatement query = null;
-        ResultSet rs = null;
-        List<Reserva> reservas = new ArrayList<>();
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("SELECT * FROM TblReserva WHERE numeroQuarto = ? ORDER BY dataInicial;");
-            query.setString(1, quarto.getNumero());
-            rs = query.executeQuery();
-
-            while (rs.next()) {
-                String dataInicial = DataFormat.sqliteDataToNormal(rs.getString("dataInicial"));
-                String dataFinal = DataFormat.sqliteDataToNormal(rs.getString("dataFinal"));
-                String horaEntrada = rs.getString("horaInicial");
-                String horaSaida = rs.getString("horaFinal");
-                UsuarioDAO usuarioDAO = new UsuarioDAOImpl(this.conexaoHandler);
-                Usuario usuario = usuarioDAO.getUsuarioPorLogin(rs.getString("usuarioLogin"));
-                Reserva reserva = new Reserva(dataInicial, dataFinal, horaEntrada, horaSaida, quarto, usuario);
-                reservas.add(reserva);
-            }
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (ConnectException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } finally {
-            CloseQuietly.close(query);
-            CloseQuietly.close(rs);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-
-        return reservas;
-        */
     }
 
     /**
@@ -107,47 +55,6 @@ public class ReservaDAOImpl implements ReservaDAO {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
         Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.data BETWEEN dataInicial AND dataFinal ORDER BY r.numeroQuarto");
         return query.getResultList();
-
-        /*
-        PreparedStatement query = null;
-        ResultSet rs = null;
-        List<Reserva> reservas = new ArrayList<>();
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("SELECT * FROM TblReserva WHERE ? BETWEEN dataInicial AND dataFinal ORDER BY numeroQuarto");
-            query.setString(1, DataFormat.dataStrToSqliteStr(data));
-            rs = query.executeQuery();
-
-            while (rs.next()) {
-                String dataInicial = DataFormat.sqliteDataToNormal(rs.getString("dataInicial"));
-                String dataFinal = DataFormat.sqliteDataToNormal(rs.getString("dataFinal"));
-                String horaEntrada = rs.getString("horaInicial");
-                String horaSaida = rs.getString("horaFinal");
-                UsuarioDAO usuarioDAO = new UsuarioDAOImpl(this.conexaoHandler);
-                Usuario usuario = usuarioDAO.getUsuarioPorLogin(rs.getString("usuarioLogin"));
-                QuartoDAO quartoDAO = new QuartoDAOImpl(this.conexaoHandler);
-                Quarto quarto = quartoDAO.getQuartoPorNumero(rs.getString("numeroQuarto"));
-                Reserva reserva = new Reserva(dataInicial, dataFinal, horaEntrada, horaSaida, quarto, usuario);
-                reservas.add(reserva);
-            }
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (ConnectException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } finally {
-            CloseQuietly.close(query);
-            CloseQuietly.close(rs);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-
-        return reservas;
-        */
     }
 
     /**
@@ -162,34 +69,6 @@ public class ReservaDAOImpl implements ReservaDAO {
         entityManager.persist(reserva);
         entityManager.getTransaction().commit();
         entityManager.close();
-
-        /*
-        PreparedStatement query = null;
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("INSERT INTO TblReserva (dataInicial, dataFinal, horaInicial, horaFinal, numeroQuarto, usuarioLogin) VALUES (?, ?, '08:00', '00:00', ?, ?)");
-            query.setString(1, reserva.getDataInicial());
-            query.setString(2, reserva.getDataFinal());
-            query.setString(3, reserva.getQuarto().getNumero());
-            query.setString(4, reserva.getUsuario().getLogin());
-
-            query.execute();
-            c.commit();
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (ConnectException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } finally {
-            CloseQuietly.close(query);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-        */
     }
 
     /**
@@ -202,46 +81,7 @@ public class ReservaDAOImpl implements ReservaDAO {
     @Override
     public List<Reserva> getReservasPorUsuario(Usuario usuario) {
         EntityManager entityManager = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory().createEntityManager();
-        Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.usuarioLogin = '" + usuario.getLogin() + "'");
+        Query query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.usuario = '" + usuario.getLogin() + "'");
         return query.getResultList();
-
-        /*
-        PreparedStatement query = null;
-        ResultSet rs = null;
-        List<Reserva> reservas = new ArrayList<>();
-        Connection c = null;
-
-        try {
-            c = this.conexaoHandler.getConexao();
-            c.setAutoCommit(false);
-
-            query = c.prepareStatement("SELECT * FROM TblReserva WHERE usuarioLogin = ?");
-            query.setString(1, usuario.getLogin());
-            rs = query.executeQuery();
-
-            while (rs.next()) {
-                String dataInicial = DataFormat.sqliteDataToNormal(rs.getString("dataInicial"));
-                String dataFinal = DataFormat.sqliteDataToNormal(rs.getString("dataFinal"));
-                String horaEntrada = rs.getString("horaInicial");
-                String horaSaida = rs.getString("horaFinal");
-                QuartoDAO quartoDAO = new QuartoDAOImpl(this.conexaoHandler);
-                Quarto quarto = quartoDAO.getQuartoPorNumero(rs.getString("numeroQuarto"));
-                Reserva reserva = new Reserva(dataInicial, dataFinal, horaEntrada, horaSaida, quarto, usuario);
-                reservas.add(reserva);
-            }
-        } catch (SQLException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } catch (ConnectException e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        } finally {
-            CloseQuietly.close(query);
-            CloseQuietly.close(rs);
-
-            if (c != null)
-                this.conexaoHandler.liberarConexao(c);
-        }
-
-        return reservas;
-        */
     }
 }

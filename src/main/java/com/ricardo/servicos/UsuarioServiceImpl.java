@@ -16,14 +16,8 @@ import java.util.Objects;
 public class UsuarioServiceImpl implements UsuarioService {
     private final UsuarioDAO usuarioDAO;
 
-    /**
-     * Inicializa um serviço do tipo UsuarioService.
-     *
-     * @param conexaoHandler Referência para ConexaoHandler responsável por gerenciar conexões.
-     */
-    public UsuarioServiceImpl(ConexaoHandler conexaoHandler) {
-        Objects.requireNonNull(conexaoHandler, "Parametro de conexão nulo em UsuarioServiceImpl");
-        this.usuarioDAO = new UsuarioDAOImpl(conexaoHandler);
+    public UsuarioServiceImpl() {
+        this.usuarioDAO = new UsuarioDAOImpl();
     }
 
     /**

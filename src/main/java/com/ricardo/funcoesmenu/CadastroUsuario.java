@@ -18,7 +18,7 @@ public class CadastroUsuario implements OperacaoMenu {
     @Override
     public void executar() {
         PromptService p = new PromptServiceImpl(new UserInput());
-        UsuarioService uS = new UsuarioServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        UsuarioService uS = new UsuarioServiceImpl();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.CadastroUsuario(p, uS));
         gerenciamentoDeTela.exibirTela();
     }

@@ -17,7 +17,7 @@ import java.util.List;
 public class ExibeQuartos implements OperacaoMenu {
     @Override
     public void executar() {
-        QuartoService quartoService = new QuartoServiceImpl(ConexaoHandlerHolder.getInstance().getSqliteConHandler());
+        QuartoService quartoService = new QuartoServiceImpl();
         List<Quarto> quartos = quartoService.getQuartos();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.ExibeQuartos(quartos));
         gerenciamentoDeTela.exibirTela();
