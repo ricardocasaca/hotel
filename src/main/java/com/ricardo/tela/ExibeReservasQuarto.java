@@ -49,8 +49,8 @@ public class ExibeReservasQuarto implements Tela {
             for (Reserva reserva : reservas) {
                 System.out.println("O quarto " + numeroQuarto + " possui as seguintes reservas:");
                 System.out.println("--------------------------------------------------");
-                System.out.println("Data de entrada: " + reserva.getDataInicial());
-                System.out.println("Data de saída: " + reserva.getDataFinal());
+                System.out.println("Data de entrada: " + reserva.getDataEntradaString());
+                System.out.println("Data de saída: " + reserva.getDataSaidaString());
                 System.out.println("--------------------------------------------------");
             }
         }

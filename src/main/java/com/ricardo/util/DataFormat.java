@@ -10,40 +10,34 @@ import java.util.Date;
  */
 public class DataFormat {
     /**
-     * Converte data do formato dd/mm/aaaa para o formato aaaa-mm-dd.
+     * Converte a string 'dd/MM/aaaa;HH:mm' para o formato Date.
+     * [dd: Dia], [MM: Mês], [aaaa: Ano], [HH: Hora (0 - 23)], [mm: Minuto]
      *
-     * @param data String contendo a data a ser formatada no formato dd/mm/aaaa.
-     * @return String contendo a data no formato aaaa-mm-dd. Retorna null em caso de falha.
+     * Exemplo: 11/10/1988;23:43
+     * @param data String no formato dd/MM/aaaa;HH:mm
+     * @return Objeto Date com a data e a hora especificados.
      */
-    public static String dataStrToSqliteStr(String data) {
-        String dataFormatoSqlite = null;
-        SimpleDateFormat objData = new SimpleDateFormat("dd/MM/yyyy");
-        SimpleDateFormat objDataSqlite = new SimpleDateFormat("yyyy-MM-dd");
+    public static Date strToDateTime(String data) {
+        Date dataConvertida = null;
 
         try {
-            Date dataAux = objData.parse(data);
-            dataFormatoSqlite = objDataSqlite.format(dataAux);
-        } catch (ParseException e) { e.printStackTrace(); }
+            dataConvertida = new SimpleDateFormat("dd/MM/yyyy;HH:mm").parse(data);
+        } catch (ParseException e) {
+            // TODO: Colocar log dizendo que não deveria cair aqui nunca.
+        }
 
-        return dataFormatoSqlite;
+        return dataConvertida;
     }
 
     /**
-     * Converte data do formato aaaa-mm-dd para o formato dd/mm/aaaa.
+     * Converte a data para a String 'dd/MM/aaaa;HH:mm'.
+     * [dd: Dia], [MM: Mês], [aaaa: Ano], [HH: Hora (0 - 23)], [mm: Minuto]
      *
-     * @param data String contendo a data a ser formatada no formato aaaa-mm-dd.
-     * @return String contendo a data no formato dd/mm/aaaa. Retorna null em caso de falha.
+     * Exemplo: 11/10/1988;23:43
+     * @param data Objeto Date.
+     * @return String no formato dd/MM/aaaa;HH:mm
      */
-    public static String sqliteDataToNormal(String data) {
-        String dataNormal = null;
-        SimpleDateFormat objDataSqlite = new SimpleDateFormat("yyyy-MM-dd");
-        SimpleDateFormat objDataNormal = new SimpleDateFormat("dd/MM/yyyy");
-
-        try {
-            Date dataAux = objDataSqlite.parse(data);
-            dataNormal = objDataNormal.format(dataAux);
-        } catch (ParseException e) { e.printStackTrace(); }
-
-        return dataNormal;
+    public static String dateTimeToStr(Date data){
+        return new SimpleDateFormat("dd/MM/yyyy;HH:mm").format(data);
     }
 }

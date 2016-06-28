@@ -51,8 +51,8 @@ public class ExibeReservasPorUsuario implements Tela {
             for (Reserva r : reservas) {
                 System.out.println("---------------------------------------");
                 System.out.println("Quarto: " + r.getQuarto().getNumero());
-                System.out.println("Entrada: " + r.getDataInicial());
-                System.out.println("Saída: " + r.getDataFinal());
+                System.out.println("Entrada: " + r.getDataEntradaString());
+                System.out.println("Saída: " + r.getDataSaidaString());
                 System.out.println("---------------------------------------");
             }
         }

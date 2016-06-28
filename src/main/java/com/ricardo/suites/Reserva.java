@@ -1,8 +1,10 @@
 package com.ricardo.suites;
 
 import com.ricardo.pessoa.Usuario;
+import com.ricardo.util.DataFormat;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by ricardo on 16/05/16.
@@ -12,42 +14,37 @@ public class Reserva {
     @Id
     @GeneratedValue
     private int id;
-    private String dataInicial;
-    private String dataFinal;
+    private Date dataHoraEntrada;
+    private Date dataHoraSaida;
     @ManyToOne
     @JoinColumn(name = "quarto_id")
     private Quarto quarto;
     @ManyToOne
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
-    private String horaEntrada;
-    private String horaSaida;
 
     public Reserva() {
     }
 
-    public Reserva(String dataInicial, String dataFinal, String horaEntrada, String horaSaida, Quarto quarto, Usuario usuario) {
-        this.dataInicial = dataInicial;
-        this.dataFinal = dataFinal;
-        this.horaEntrada = horaEntrada;
-        this.horaSaida = horaSaida;
+    public Reserva(Date dataHoraEntrada, Date dataHoraSaida, Quarto quarto, Usuario usuario) {
+        this.dataHoraEntrada = dataHoraEntrada;
+        this.dataHoraSaida = dataHoraSaida;
         this.quarto = quarto;
         this.usuario = usuario;
     }
 
-    public String getDataInicial() {
-        return dataInicial;
+    public String getDataEntradaString() {
+        String dataHoraEntrada = DataFormat.dateTimeToStr(this.dataHoraEntrada);
+        return dataHoraEntrada.split(";")[0];
     }
 
-    public String getDataFinal() {
-        return dataFinal;
+    public String getDataSaidaString() {
+        String dataHoraSaida = DataFormat.dateTimeToStr(this.dataHoraSaida);
+        return dataHoraSaida.split(";")[0];
     }
 
     public Quarto getQuarto() { return quarto; }
 
     public Usuario getUsuario() { return usuario; }
 
-    public String getHoraEntrada() { return horaEntrada; }
-
-    public String getHoraSaida() { return horaSaida; }
 }
