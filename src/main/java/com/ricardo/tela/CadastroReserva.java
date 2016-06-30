@@ -48,8 +48,6 @@ public class CadastroReserva implements Tela {
         if (!quartoService.existeQuarto(quarto)) {
             System.out.println("Quarto não cadastrado!");
             return;
-        } else {
-            quarto.setReservas(reservaService.getReservasPorQuarto(quarto));
         }
 
         promptService.setValidador(new ConstruirValidador().addValidador(new ValidacaoDataFormato())

@@ -14,10 +14,12 @@ public class Reserva {
     @Id
     @GeneratedValue
     private int id;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dataHoraEntrada;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dataHoraSaida;
     @ManyToOne
-    @JoinColumn(name = "quarto_id")
+    @JoinColumn(name = "quarto_id", nullable = false)
     private Quarto quarto;
     @ManyToOne
     @JoinColumn(name = "usuario_id")

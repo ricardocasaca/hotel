@@ -9,6 +9,7 @@ import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
 
 import javax.persistence.EntityManagerFactory;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -41,7 +42,7 @@ public class ReservaServiceImpl implements ReservaService {
      * @return Lista contendo as reservas para a data especificada ou lista vazia caso não haja nenhuma reserva.
      */
     @Override
-    public List<Reserva> getReservasPorData(String data) {
+    public List<Reserva> getReservasPorData(Date data) {
         ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
         return rDAO.getReservasPorData(data);
     }

@@ -10,6 +10,7 @@ import javax.persistence.EntityExistsException;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.TransactionRequiredException;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -54,11 +55,12 @@ public class ReservaDAOImpl implements ReservaDAO {
      * retorna uma lista vazia.
      */
     @Override
-    public List<Reserva> getReservasPorData(String data) {
+    public List<Reserva> getReservasPorData(Date data) {
         Query query = null;
 
         try {
-            query = entityManager.createQuery("SELECT r FROM Reserva r WHERE r.data BETWEEN dataInicial AND dataFinal ORDER BY r.numeroQuarto");
+            query = entityManager.createQuery("SELECT r FROM Reserva r WHERE :data BETWEEN r.dataHoraEntrada AND r.dataHoraSaida");
+            query.setParameter("data", data);
         }catch (IllegalArgumentException e){
 
         }

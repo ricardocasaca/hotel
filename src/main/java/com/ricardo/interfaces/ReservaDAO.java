@@ -4,6 +4,7 @@ import com.ricardo.pessoa.Usuario;
 import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ public interface ReservaDAO {
     // Retorna todas as reservas do quarto.
     List<Reserva> getReservasPorQuarto(Quarto quarto);
 
-    List<Reserva> getReservasPorData(String data);
+    List<Reserva> getReservasPorData(Date data);
 
     void inserirReserva(Reserva reserva);
 

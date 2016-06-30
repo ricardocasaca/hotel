@@ -5,6 +5,8 @@ import com.ricardo.interfaces.ReservaService;
 import com.ricardo.interfaces.Tela;
 import org.junit.Test;
 
+import java.util.Date;
+
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
 
@@ -18,6 +20,6 @@ public class ExibeReservasDataTest {
         ReservaService reservaService = mock(ReservaService.class);
         Tela exibeReservasData = new ExibeReservasData(promptService, reservaService);
         exibeReservasData.iniciarTela();
-        verify(reservaService, times(1)).getReservasPorData(anyString());
+        verify(reservaService, times(1)).getReservasPorData(any(Date.class));
     }
 }

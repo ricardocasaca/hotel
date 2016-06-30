@@ -4,6 +4,7 @@ import com.ricardo.pessoa.Usuario;
 import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
 public interface ReservaService {
     List<Reserva> getReservasPorQuarto(Quarto q);
 
-    List<Reserva> getReservasPorData(String data);
+    List<Reserva> getReservasPorData(Date data);
 
     void setReserva(Reserva r);
 
