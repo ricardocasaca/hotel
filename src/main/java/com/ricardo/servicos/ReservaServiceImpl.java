@@ -52,6 +52,7 @@ public class ReservaServiceImpl implements ReservaService {
      *
      * @param r Referência para a reserva a ser cadastrada.
      */
+    // TODO Mudar o noem para cadastrar Reserva
     @Override
     public void setReserva(Reserva r) {
         ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
