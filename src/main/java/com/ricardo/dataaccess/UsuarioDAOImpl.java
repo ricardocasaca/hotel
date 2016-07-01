@@ -18,8 +18,8 @@ import java.util.logging.Logger;
  * a um usuário.
  */
 public class UsuarioDAOImpl implements UsuarioDAO {
-    private EntityManagerFactoryFacade entityManagerFactoryFacade;
     private static final Logger log = Logger.getLogger(UsuarioDAOImpl.class.getName());
+    private EntityManagerFactoryFacade entityManagerFactoryFacade;
 
     public UsuarioDAOImpl(EntityManagerFactoryFacade eMFF) {
         this.entityManagerFactoryFacade = Objects.requireNonNull(eMFF, this.getClass().getName() + ": Argumento nulo no construtor");
@@ -115,7 +115,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
             eM.persist(usuario);
             eM.getTransaction().commit();
         } catch (EntityExistsException | TransactionRequiredException e) {
-            log.log( Level.SEVERE, e.toString(), e );
+            log.log(Level.SEVERE, e.toString(), e);
         } finally {
             CloseQuietly.close(eM);
         }

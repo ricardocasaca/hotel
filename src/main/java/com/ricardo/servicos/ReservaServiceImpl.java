@@ -1,6 +1,5 @@
 package com.ricardo.servicos;
 
-import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.ReservaDAOImpl;
 import com.ricardo.interfaces.EntityManagerFactoryFacade;
 import com.ricardo.interfaces.ReservaDAO;
@@ -10,7 +9,6 @@ import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
 import com.ricardo.util.DataFormat;
 
-import javax.persistence.EntityManagerFactory;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;

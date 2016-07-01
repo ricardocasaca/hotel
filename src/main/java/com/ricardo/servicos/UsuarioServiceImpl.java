@@ -1,13 +1,11 @@
 package com.ricardo.servicos;
 
-import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.UsuarioDAOImpl;
 import com.ricardo.interfaces.EntityManagerFactoryFacade;
 import com.ricardo.interfaces.UsuarioDAO;
 import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 
-import javax.persistence.EntityManagerFactory;
 import java.util.List;
 
 /**

@@ -1,13 +1,11 @@
 package com.ricardo.servicos;
 
-import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.QuartoDAOImpl;
 import com.ricardo.interfaces.EntityManagerFactoryFacade;
 import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.interfaces.QuartoService;
 import com.ricardo.suites.Quarto;
 
-import javax.persistence.EntityManagerFactory;
 import java.util.List;
 
 /**

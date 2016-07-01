@@ -21,8 +21,8 @@ import java.util.logging.Logger;
  */
 
 public class QuartoDAOImpl implements QuartoDAO {
-    private EntityManagerFactoryFacade entityManagerFactoryFacade;
     private static final Logger log = Logger.getLogger(QuartoDAOImpl.class.getName());
+    private EntityManagerFactoryFacade entityManagerFactoryFacade;
 
     public QuartoDAOImpl(EntityManagerFactoryFacade eMFF) {
         this.entityManagerFactoryFacade = eMFF;
@@ -81,7 +81,7 @@ public class QuartoDAOImpl implements QuartoDAO {
             eM.persist(quarto);
             eM.getTransaction().commit();
         } catch (EntityExistsException | TransactionRequiredException e) {
-            log.log( Level.SEVERE, e.toString(), e );
+            log.log(Level.SEVERE, e.toString(), e);
         } finally {
             CloseQuietly.close(eM);
         }

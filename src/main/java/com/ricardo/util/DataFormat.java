@@ -1,7 +1,5 @@
 package com.ricardo.util;
 
-import com.ricardo.dataaccess.QuartoDAOImpl;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -31,7 +29,7 @@ public class DataFormat {
         try {
             dataConvertida = new SimpleDateFormat("dd/MM/yyyy;HH:mm").parse(data);
         } catch (ParseException e) {
-            log.log( Level.SEVERE, e.toString(), e );
+            log.log(Level.SEVERE, e.toString(), e);
         }
 
         return dataConvertida;
