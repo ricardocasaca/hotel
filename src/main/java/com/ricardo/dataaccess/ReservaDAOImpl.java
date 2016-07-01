@@ -105,7 +105,8 @@ public class ReservaDAOImpl implements ReservaDAO {
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            query = eM.createQuery("SELECT r FROM Reserva r WHERE r.usuario = '" + usuario.getLogin() + "'");
+            query = eM.createQuery("SELECT r FROM Reserva r WHERE r.usuario = :usuario");
+            query.setParameter("usuario", usuario);
             return query.getResultList();
         } finally {
             CloseQuietly.close(eM);
