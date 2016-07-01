@@ -15,7 +15,7 @@ public interface ReservaService {
 
     List<Reserva> getReservasPorData(Date data);
 
-    void setReserva(Reserva r);
+    void cadastrarReserva(Reserva r);
 
     List<Reserva> getReservasPorUsuario(Usuario u);
 }

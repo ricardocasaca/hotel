@@ -57,9 +57,9 @@ public class CadastroReserva implements Tela {
         String dataEntrada = promptService.getUserData("Entre a data inicial da reserva no formato (dd/mm/aaaa).");
         String dataSaida = promptService.getUserData("Entre a data final da reserva no formato (dd/mm/aaaa).");
 
-        Reserva reserva = new Reserva(DataFormat.strToDateTime(dataEntrada + ";14:00"), DataFormat.strToDateTime(dataSaida + ";12:00"), quarto, this.usuario);
+        Reserva reserva = new Reserva(DataFormat.strToDateTime(dataEntrada + ";12:00"), DataFormat.strToDateTime(dataSaida + ";14:00"), quarto, this.usuario);
 
-        reservaService.setReserva(reserva);
+        reservaService.cadastrarReserva(reserva);
         System.out.println("Reserva efetuada com sucesso!");
     }
 }

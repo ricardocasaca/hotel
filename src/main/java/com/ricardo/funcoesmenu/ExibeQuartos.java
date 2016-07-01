@@ -1,5 +1,7 @@
 package com.ricardo.funcoesmenu;
 
+import com.ricardo.conexao.EntityManagerFactoryFacadeImpl;
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.interfaces.OperacaoMenu;
 import com.ricardo.interfaces.QuartoService;
 import com.ricardo.servicos.QuartoServiceImpl;
@@ -16,7 +18,7 @@ import java.util.List;
 public class ExibeQuartos implements OperacaoMenu {
     @Override
     public void executar() {
-        QuartoService quartoService = new QuartoServiceImpl();
+        QuartoService quartoService = new QuartoServiceImpl(new EntityManagerFactoryFacadeImpl(EntityManagerFactorySingleton.getInstance().getEntityManagerFactory()));
         List<Quarto> quartos = quartoService.getQuartos();
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.ExibeQuartos(quartos));
         gerenciamentoDeTela.exibirTela();

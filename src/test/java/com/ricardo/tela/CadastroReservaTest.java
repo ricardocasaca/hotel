@@ -20,14 +20,13 @@ import static org.mockito.Mockito.*;
  * Created by ricardo on 13/06/16.
  */
 public class CadastroReservaTest {
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
     private Tela cadastroReserva;
     private Usuario usuario;
     private PromptService promptService;
     private QuartoService quartoService;
     private ReservaService reservaService;
-
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
 
     @Before
     public void setUp() throws Exception {

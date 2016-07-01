@@ -10,13 +10,14 @@ public class PropertiesErroSingleton {
     private static final PropertiesErroSingleton pES = new PropertiesErroSingleton();
     private static final ResourceBundle rB = ResourceBundle.getBundle("msgerros", Locale.getDefault());
 
-    private PropertiesErroSingleton(){}
+    private PropertiesErroSingleton() {
+    }
 
-    public static PropertiesErroSingleton getInstance(){
+    public static PropertiesErroSingleton getInstance() {
         return pES;
     }
 
-    public ResourceBundle getProp(){
+    public ResourceBundle getProp() {
         return rB;
     }
 }

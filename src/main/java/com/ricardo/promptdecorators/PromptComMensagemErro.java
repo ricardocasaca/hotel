@@ -21,7 +21,9 @@ public class PromptComMensagemErro extends PromptDecorator {
      *
      * @param p Objeto prompt a ser decorado com o recurso de mensagem de erro.
      */
-    public PromptComMensagemErro(PromptService p) {this.promptService = p;}
+    public PromptComMensagemErro(PromptService p) {
+        this.promptService = p;
+    }
 
     /**
      * Pega input do usuário.

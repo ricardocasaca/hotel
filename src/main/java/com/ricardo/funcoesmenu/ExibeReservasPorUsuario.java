@@ -1,5 +1,7 @@
 package com.ricardo.funcoesmenu;
 
+import com.ricardo.conexao.EntityManagerFactoryFacadeImpl;
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.interfaces.OperacaoMenu;
 import com.ricardo.interfaces.PromptService;
 import com.ricardo.interfaces.ReservaService;
@@ -17,8 +19,8 @@ import com.ricardo.util.UserInput;
  */
 public class ExibeReservasPorUsuario implements OperacaoMenu {
     PromptService p = new PromptServiceImpl(new UserInput());
-    ReservaService rS = new ReservaServiceImpl();
-    UsuarioService uS = new UsuarioServiceImpl();
+    ReservaService rS = new ReservaServiceImpl(new EntityManagerFactoryFacadeImpl(EntityManagerFactorySingleton.getInstance().getEntityManagerFactory()));
+    UsuarioService uS = new UsuarioServiceImpl(new EntityManagerFactoryFacadeImpl(EntityManagerFactorySingleton.getInstance().getEntityManagerFactory()));
 
     @Override
     public void executar() {

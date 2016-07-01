@@ -2,13 +2,16 @@ package com.ricardo.servicos;
 
 import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.ReservaDAOImpl;
+import com.ricardo.interfaces.EntityManagerFactoryFacade;
 import com.ricardo.interfaces.ReservaDAO;
 import com.ricardo.interfaces.ReservaService;
 import com.ricardo.pessoa.Usuario;
 import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
+import com.ricardo.util.DataFormat;
 
 import javax.persistence.EntityManagerFactory;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -17,10 +20,10 @@ import java.util.List;
  * Classe de serviço responsável por realizar operações referentes a reserva.
  */
 public class ReservaServiceImpl implements ReservaService {
-    private EntityManagerFactory entityManagerFactory;
+    private EntityManagerFactoryFacade entityManagerFactoryFacade;
 
-    public ReservaServiceImpl() {
-        this.entityManagerFactory = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory();
+    public ReservaServiceImpl(EntityManagerFactoryFacade eMFF) {
+        this.entityManagerFactoryFacade = eMFF;
     }
 
     /**
@@ -31,7 +34,7 @@ public class ReservaServiceImpl implements ReservaService {
      */
     @Override
     public List<Reserva> getReservasPorQuarto(Quarto q) {
-        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        ReservaDAO rDAO = new ReservaDAOImpl(this.entityManagerFactoryFacade);
         return rDAO.getReservasPorQuarto(q);
     }
 
@@ -43,7 +46,7 @@ public class ReservaServiceImpl implements ReservaService {
      */
     @Override
     public List<Reserva> getReservasPorData(Date data) {
-        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        ReservaDAO rDAO = new ReservaDAOImpl(this.entityManagerFactoryFacade);
         return rDAO.getReservasPorData(data);
     }
 
@@ -52,11 +55,21 @@ public class ReservaServiceImpl implements ReservaService {
      *
      * @param r Referência para a reserva a ser cadastrada.
      */
-    // TODO Mudar o noem para cadastrar Reserva
     @Override
-    public void setReserva(Reserva r) {
-        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+    public void cadastrarReserva(Reserva r) {
+        this.incrementaDataSaidaSeIgualEntrada(r);
+        ReservaDAO rDAO = new ReservaDAOImpl(this.entityManagerFactoryFacade);
         rDAO.inserirReserva(r);
+    }
+
+    private void incrementaDataSaidaSeIgualEntrada(Reserva r) {
+        SimpleDateFormat formater = new SimpleDateFormat("dd/MM/yyyy");
+        String dataEntrada = formater.format(r.getDataHoraEntrada());
+        String dataSaida = formater.format(r.getDataHoraSaida());
+
+        if (dataEntrada.equals(dataSaida)) {
+            r.setDataHoraSaida(DataFormat.dateAddBy(r.getDataHoraSaida(), 1));
+        }
     }
 
     /**
@@ -67,7 +80,7 @@ public class ReservaServiceImpl implements ReservaService {
      */
     @Override
     public List<Reserva> getReservasPorUsuario(Usuario u) {
-        ReservaDAO rDAO = new ReservaDAOImpl(entityManagerFactory.createEntityManager());
+        ReservaDAO rDAO = new ReservaDAOImpl(this.entityManagerFactoryFacade);
         return rDAO.getReservasPorUsuario(u);
     }
 }

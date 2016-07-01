@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import java.util.Date;
 
-import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
 
 /**

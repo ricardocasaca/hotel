@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by ricardo on 14/06/16.
  */
-public class ValidacaoAlfaNumericoTest extends ValidacaoTeste{
+public class ValidacaoAlfaNumericoTest extends ValidacaoTeste {
     @Test
     public void validandoInputAlfaNumericoDeveRetornarStatusZero() throws Exception {
         validador = new ValidacaoAlfaNumerico();

@@ -19,7 +19,8 @@ public abstract class Usuario {
     private String hashSenha;
     private boolean isAdmin;
 
-    public Usuario() { }
+    public Usuario() {
+    }
 
     public Usuario(String login) {
         this.login = Objects.requireNonNull(login, this.getClass().getName() + ": login nulo.");
@@ -56,7 +57,9 @@ public abstract class Usuario {
      *
      * @return String contendo login do usuário.
      */
-    public String getLogin() { return login; }
+    public String getLogin() {
+        return login;
+    }
 
     /**
      * Define um login para o usuário.

@@ -33,7 +33,7 @@ public class AutenticacaoServiceImplTest {
         when(this.usuarioService.existeUsuario(this.usuario)).thenReturn(true); // Garante que usuário existe na base.
 
         // Garante que o usuário encontrado na base de dados retorne o hash "hash".
-        when(this.usuarioService.getUsuarioPorLogin(this.usuario.getLogin())).thenReturn(new UsuarioSimples(){
+        when(this.usuarioService.getUsuarioPorLogin(this.usuario.getLogin())).thenReturn(new UsuarioSimples() {
             @Override
             public String getHashSenha() {
                 return "hash";
@@ -49,7 +49,7 @@ public class AutenticacaoServiceImplTest {
         when(this.usuarioService.existeUsuario(this.usuario)).thenReturn(true); // Garante que usuário existe na base.
 
         // Garante que o usuário encontrado na base de dados retorne o hash "hash".
-        when(this.usuarioService.getUsuarioPorLogin(this.usuario.getLogin())).thenReturn(new UsuarioSimples(){
+        when(this.usuarioService.getUsuarioPorLogin(this.usuario.getLogin())).thenReturn(new UsuarioSimples() {
             @Override
             public String getHashSenha() {
                 return "hash";

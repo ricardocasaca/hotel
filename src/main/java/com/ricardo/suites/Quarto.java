@@ -2,9 +2,6 @@ package com.ricardo.suites;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by ricardo on 16/05/16.

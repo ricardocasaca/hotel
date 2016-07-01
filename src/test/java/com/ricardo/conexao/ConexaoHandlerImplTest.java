@@ -57,13 +57,13 @@ public class ConexaoHandlerImplTest {
     }
 
     @Test
-    public void ConstrutorComBaseDeDadosNulaException(){
+    public void ConstrutorComBaseDeDadosNulaException() {
         excecao.expect(NullPointerException.class);
         ConexaoHandler cH = new ConexaoHandlerImpl(null, 3);
     }
 
     @Test
-    public void ConstrutorComLimiteDeConexaoIlegal(){
+    public void ConstrutorComLimiteDeConexaoIlegal() {
         excecao.expect(IllegalArgumentException.class);
         excecao.expectMessage("O limite de conexões deve ser no mínimo 1.");
         ConexaoHandler cH = new ConexaoHandlerImpl(mock(Sqlite.class), 0);

@@ -9,5 +9,6 @@ import com.ricardo.interfaces.OperacaoMenu;
  */
 public class SairMenu implements OperacaoMenu {
     @Override
-    public void executar() { }
+    public void executar() {
+    }
 }

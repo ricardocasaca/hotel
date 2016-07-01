@@ -2,6 +2,7 @@ package com.ricardo.servicos;
 
 import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.dataaccess.QuartoDAOImpl;
+import com.ricardo.interfaces.EntityManagerFactoryFacade;
 import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.interfaces.QuartoService;
 import com.ricardo.suites.Quarto;
@@ -14,10 +15,10 @@ import java.util.List;
  *         Classe de serviço responsável por realizar operações referentes a um quarto.
  */
 public class QuartoServiceImpl implements QuartoService {
-    private EntityManagerFactory entityManagerFactory;
+    private EntityManagerFactoryFacade entityManagerFactoryFacade;
 
-    public QuartoServiceImpl() {
-        this.entityManagerFactory = EntityManagerFactorySingleton.getInstance().getEntityManagerFactory();
+    public QuartoServiceImpl(EntityManagerFactoryFacade eMFF) {
+        this.entityManagerFactoryFacade = eMFF;
     }
 
     /**
@@ -27,7 +28,7 @@ public class QuartoServiceImpl implements QuartoService {
      */
     @Override
     public List<Quarto> getQuartos() {
-        QuartoDAO qDAO = new QuartoDAOImpl(entityManagerFactory.createEntityManager());
+        QuartoDAO qDAO = new QuartoDAOImpl(this.entityManagerFactoryFacade);
         return qDAO.getAllQuartos();
     }
 
@@ -38,7 +39,7 @@ public class QuartoServiceImpl implements QuartoService {
      */
     @Override
     public void cadastrarQuarto(Quarto quarto) {
-        QuartoDAO qDAO = new QuartoDAOImpl(entityManagerFactory.createEntityManager());
+        QuartoDAO qDAO = new QuartoDAOImpl(this.entityManagerFactoryFacade);
         qDAO.inserirQuarto(quarto);
     }
 
@@ -50,7 +51,7 @@ public class QuartoServiceImpl implements QuartoService {
      */
     @Override
     public boolean existeQuarto(Quarto quarto) {
-        QuartoDAO qDAO = new QuartoDAOImpl(entityManagerFactory.createEntityManager());
+        QuartoDAO qDAO = new QuartoDAOImpl(this.entityManagerFactoryFacade);
         return qDAO.getQuartoPorNumero(quarto.getNumero()) != null;
     }
 }

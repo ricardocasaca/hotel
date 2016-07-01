@@ -11,7 +11,9 @@ import com.ricardo.pessoa.Usuario;
  * Classe responsável por montar e mostrar o menu de usuário.
  */
 public class MenuUsuario extends Menu implements Tela {
-    public MenuUsuario(Usuario usuario, PromptService p) { super(usuario, p); }
+    public MenuUsuario(Usuario usuario, PromptService p) {
+        super(usuario, p);
+    }
 
     /**
      * Inicia tela.

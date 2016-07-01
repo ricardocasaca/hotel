@@ -45,8 +45,28 @@ public class Reserva {
         return dataHoraSaida.split(";")[0];
     }
 
-    public Quarto getQuarto() { return quarto; }
+    public Date getDataHoraEntrada() {
+        return dataHoraEntrada;
+    }
 
-    public Usuario getUsuario() { return usuario; }
+    public void setDataHoraEntrada(Date dataHoraEntrada) {
+        this.dataHoraEntrada = dataHoraEntrada;
+    }
+
+    public Date getDataHoraSaida() {
+        return dataHoraSaida;
+    }
+
+    public void setDataHoraSaida(Date dataHoraSaida) {
+        this.dataHoraSaida = dataHoraSaida;
+    }
+
+    public Quarto getQuarto() {
+        return quarto;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
 
 }

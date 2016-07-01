@@ -8,11 +8,17 @@ import com.ricardo.interfaces.StatusErro;
 public abstract class ErrorStatusHandler implements StatusErro {
     private String codigo;
 
-    public ErrorStatusHandler(String codigo) { this.codigo = codigo; }
+    public ErrorStatusHandler(String codigo) {
+        this.codigo = codigo;
+    }
 
     @Override
-    public String getCodigo() { return this.codigo; }
+    public String getCodigo() {
+        return this.codigo;
+    }
 
     @Override
-    public boolean isOK() { return this.codigo.equals("0") ? true : false; }
+    public boolean isOK() {
+        return this.codigo.equals("0") ? true : false;
+    }
 }

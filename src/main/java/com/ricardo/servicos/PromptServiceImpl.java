@@ -17,11 +17,18 @@ import java.util.Objects;
  */
 public class PromptServiceImpl implements PromptService {
     private final UserInput userInput;
-    private Validador validador;
     private final Validador vTamanhoInput; // Sempre é utilizado.
+    private Validador validador;
 
     public PromptServiceImpl(UserInput uI) {
         this(new SemValidacao(), 50, uI);
+    }
+
+    public PromptServiceImpl(Validador v, int tamanhoInput, UserInput uI) {
+        this.validador = v;
+        this.vTamanhoInput = new ValidacaoTamanhoInput(tamanhoInput);
+        int tamanhoInput1 = tamanhoInput;
+        this.userInput = uI;
     }
 
     public PromptServiceImpl(int tamanhoInput, UserInput uI) {
@@ -30,13 +37,6 @@ public class PromptServiceImpl implements PromptService {
 
     public PromptServiceImpl(Validador validador, UserInput uI) {
         this(validador, 50, uI);
-    }
-
-    public PromptServiceImpl(Validador v, int tamanhoInput, UserInput uI) {
-        this.validador = v;
-        this.vTamanhoInput = new ValidacaoTamanhoInput(tamanhoInput);
-        int tamanhoInput1 = tamanhoInput;
-        this.userInput = uI;
     }
 
     @Override

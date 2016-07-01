@@ -28,4 +28,14 @@ public class DataFormatTest {
 
         assertEquals(strDataTeste, DataFormat.dateTimeToStr(data));
     }
+
+    @Test
+    public void dateAddBy() throws ParseException {
+        Date data = DataFormat.strToDateTime("11/10/1988;23:25");
+        Date dataIncrementada = DataFormat.strToDateTime("12/10/1988;23:25");
+        Date dataDecrementada = DataFormat.strToDateTime("10/10/1988;23:25");
+
+        assertEquals(dataIncrementada, DataFormat.dateAddBy(data, 1));
+        assertEquals(dataDecrementada, DataFormat.dateAddBy(data, -1));
+    }
 }

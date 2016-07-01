@@ -1,7 +1,6 @@
 package com.ricardo.servicos;
 
 import com.ricardo.interfaces.AutenticacaoService;
-import com.ricardo.interfaces.ConexaoHandler;
 import com.ricardo.interfaces.UsuarioService;
 import com.ricardo.pessoa.Usuario;
 

@@ -11,7 +11,8 @@ import java.util.Objects;
 public class GerenciamentoDeTela {
     private Tela tela;
 
-    public GerenciamentoDeTela() { }
+    public GerenciamentoDeTela() {
+    }
 
     /**
      * Inicializa um GerenciamentoDeTela.
@@ -22,7 +23,9 @@ public class GerenciamentoDeTela {
         this.tela = Objects.requireNonNull(tela, "Tela nula em GerenciamentoDeTela");
     }
 
-    public void setTela(Tela tela) { this.tela = Objects.requireNonNull(tela); }
+    public void setTela(Tela tela) {
+        this.tela = Objects.requireNonNull(tela);
+    }
 
     /**
      * Inicia a tela.

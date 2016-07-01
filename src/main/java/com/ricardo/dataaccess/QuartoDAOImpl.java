@@ -1,8 +1,9 @@
 package com.ricardo.dataaccess;
 
-import com.ricardo.conexao.EntityManagerFactorySingleton;
+import com.ricardo.interfaces.EntityManagerFactoryFacade;
 import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.suites.Quarto;
+import com.ricardo.util.CloseQuietly;
 
 import javax.persistence.EntityExistsException;
 import javax.persistence.EntityManager;
@@ -18,10 +19,10 @@ import java.util.List;
  */
 
 public class QuartoDAOImpl implements QuartoDAO {
-    private EntityManager entityManager;
+    private EntityManagerFactoryFacade entityManagerFactoryFacade;
 
-    public QuartoDAOImpl(EntityManager eM) {
-        this.entityManager = eM;
+    public QuartoDAOImpl(EntityManagerFactoryFacade eMFF) {
+        this.entityManagerFactoryFacade = eMFF;
     }
 
     /**
@@ -32,15 +33,15 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public List<Quarto> getAllQuartos() {
-        Query query = null;
+        Query query;
+        EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            query = entityManager.createQuery("SELECT c FROM Quarto c");
-        }catch (IllegalArgumentException e){
-
+            query = eM.createQuery("SELECT c FROM Quarto c");
+            return query.getResultList();
+        } finally {
+            CloseQuietly.close(eM);
         }
-
-        return query.getResultList();
     }
 
     /**
@@ -52,11 +53,12 @@ public class QuartoDAOImpl implements QuartoDAO {
     @Override
     public Quarto getQuartoPorNumero(String numero) {
         Quarto q = null;
+        EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            q = entityManager.find(Quarto.class, numero);
-        }catch (IllegalArgumentException e){
-
+            q = eM.find(Quarto.class, numero);
+        } finally {
+            CloseQuietly.close(eM);
         }
 
         return q;
@@ -69,16 +71,20 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public void inserirQuarto(Quarto quarto) {
+        EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
+
         try {
-            entityManager.getTransaction().begin();
-            entityManager.persist(quarto);
-            entityManager.getTransaction().commit();
-        }catch (EntityExistsException e){
+            eM.getTransaction().begin();
+            eM.persist(quarto);
+            eM.getTransaction().commit();
+        } catch (EntityExistsException e) {
 
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
 
-        }catch (TransactionRequiredException e){
+        } catch (TransactionRequiredException e) {
 
+        }finally {
+            CloseQuietly.close(eM);
         }
     }
 }

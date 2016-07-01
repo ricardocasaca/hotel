@@ -1,5 +1,7 @@
 package com.ricardo.funcoesmenu;
 
+import com.ricardo.conexao.EntityManagerFactoryFacadeImpl;
+import com.ricardo.conexao.EntityManagerFactorySingleton;
 import com.ricardo.interfaces.OperacaoMenu;
 import com.ricardo.interfaces.ReservaService;
 import com.ricardo.pessoa.Usuario;
@@ -20,7 +22,7 @@ public class ExibeReservasUsuario implements OperacaoMenu {
 
     @Override
     public void executar() {
-        ReservaService rS = new ReservaServiceImpl();
+        ReservaService rS = new ReservaServiceImpl(new EntityManagerFactoryFacadeImpl(EntityManagerFactorySingleton.getInstance().getEntityManagerFactory()));
         GerenciamentoDeTela gerenciamentoDeTela = new GerenciamentoDeTela(new com.ricardo.tela.ExibeReservasUsuario(this.usuario, rS));
         gerenciamentoDeTela.exibirTela();
     }

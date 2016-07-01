@@ -7,5 +7,6 @@ import com.ricardo.validacao.ValidacaoException;
  */
 public interface PromptService {
     String getUserData(String texto) throws ValidacaoException;
+
     void setValidador(Validador v);
 }

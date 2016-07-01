@@ -33,6 +33,7 @@ public class LoginTest {
 
     /**
      * Deve verificar se os métodos getUsuarioPorLogin(), setTela() e exibirTela() são chamados apenas uma vez.
+     *
      * @throws Exception
      */
     @Test
@@ -40,16 +41,7 @@ public class LoginTest {
         this.testeDeLogin(true);
     }
 
-    /**
-     * Deve verificar se os métodos getUsuarioPorLogin(), setTela() e exibirTela() são chamados apenas uma vez.
-     * @throws Exception
-     */
-    @Test
-    public void testaLoginDeUsuarioComum() throws Exception {
-        this.testeDeLogin(false);
-    }
-
-    private void testeDeLogin(boolean isAdmin){
+    private void testeDeLogin(boolean isAdmin) {
         Usuario u = mock(Usuario.class);
         when(u.isAdmin()).thenReturn(isAdmin);
         when(this.usuarioService.getUsuarioPorLogin(anyString())).thenReturn(u);
@@ -59,5 +51,15 @@ public class LoginTest {
         verify(this.usuarioService, times(1)).getUsuarioPorLogin(anyString());
         verify(this.gerenciamentoDeTela, times(1)).setTela(any(Tela.class));
         verify(this.gerenciamentoDeTela, times(1)).exibirTela();
+    }
+
+    /**
+     * Deve verificar se os métodos getUsuarioPorLogin(), setTela() e exibirTela() são chamados apenas uma vez.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testaLoginDeUsuarioComum() throws Exception {
+        this.testeDeLogin(false);
     }
 }
