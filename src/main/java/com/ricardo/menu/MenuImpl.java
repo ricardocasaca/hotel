@@ -27,7 +27,10 @@ public class MenuImpl implements com.ricardo.interfaces.Menu {
             return false;
 
         ItemMenu iM = this.items.get(opcao); // TODO: Fazer uma checagem aqui. Se retornar nulo não deve continuar.
-        iM.executar();
+
+        if (iM != null)
+            iM.executar();
+
         return true;
     }
 

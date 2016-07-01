@@ -14,6 +14,8 @@ import javax.persistence.TransactionRequiredException;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by ricardo on 23/05/16.
@@ -23,6 +25,7 @@ import java.util.Objects;
  */
 public class ReservaDAOImpl implements ReservaDAO {
     private EntityManagerFactoryFacade entityManagerFactoryFacade;
+    private static final Logger log = Logger.getLogger(ReservaDAOImpl.class.getName());
 
     public ReservaDAOImpl(EntityManagerFactoryFacade eMFF) {
         this.entityManagerFactoryFacade = Objects.requireNonNull(eMFF, this.getClass().getName() + ": Argumento nulo no construtor");
@@ -82,13 +85,9 @@ public class ReservaDAOImpl implements ReservaDAO {
             eM.getTransaction().begin();
             eM.persist(reserva);
             eM.getTransaction().commit();
-        } catch (EntityExistsException e) {
-
-        } catch (IllegalArgumentException e) {
-
-        } catch (TransactionRequiredException e) {
-
-        }finally {
+        } catch (EntityExistsException | TransactionRequiredException e) {
+            log.log( Level.SEVERE, e.toString(), e );
+        } finally {
             CloseQuietly.close(eM);
         }
     }

@@ -10,6 +10,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.TransactionRequiredException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Ricardo Casaca
@@ -20,6 +22,7 @@ import java.util.List;
 
 public class QuartoDAOImpl implements QuartoDAO {
     private EntityManagerFactoryFacade entityManagerFactoryFacade;
+    private static final Logger log = Logger.getLogger(QuartoDAOImpl.class.getName());
 
     public QuartoDAOImpl(EntityManagerFactoryFacade eMFF) {
         this.entityManagerFactoryFacade = eMFF;
@@ -77,13 +80,9 @@ public class QuartoDAOImpl implements QuartoDAO {
             eM.getTransaction().begin();
             eM.persist(quarto);
             eM.getTransaction().commit();
-        } catch (EntityExistsException e) {
-
-        } catch (IllegalArgumentException e) {
-
-        } catch (TransactionRequiredException e) {
-
-        }finally {
+        } catch (EntityExistsException | TransactionRequiredException e) {
+            log.log( Level.SEVERE, e.toString(), e );
+        } finally {
             CloseQuietly.close(eM);
         }
     }

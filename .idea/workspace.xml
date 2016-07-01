@@ -2,52 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce192-eb0a-4de4-9d74-6af9494f619b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactoryFacadeImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/EntityManagerFactoryFacade.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_2.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotel.iml" afterPath="$PROJECT_DIR$/hotel.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/erro/ErrorStatusHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/erro/ErrorStatusHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/erro/PropertiesErroSingleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/erro/PropertiesErroSingleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroQuarto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroQuarto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroReserva.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroReserva.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroUsuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroUsuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeQuartos.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeQuartos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasData.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasPorUsuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasPorUsuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasQuarto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasQuarto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasUsuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasUsuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeUsuariosSistema.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeUsuariosSistema.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/SairMenu.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/SairMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/PromptService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/PromptService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/promptdecorators/PromptComMensagemErro.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/promptdecorators/PromptComMensagemErro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/AutenticacaoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/AutenticacaoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/PromptServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/PromptServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/QuartoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/QuartoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/ReservaServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/ReservaServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/UsuarioServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/servicos/UsuarioServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroReserva.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroReserva.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/GerenciamentoDeTela.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/GerenciamentoDeTela.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/MenuUsuario.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/tela/MenuUsuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/util/CloseQuietly.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/util/CloseQuietly.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/menu/MenuImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/menu/MenuImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java" afterPath="$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/conexao/ConexaoHandlerImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/conexao/ConexaoHandlerImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/servicos/AutenticacaoServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/servicos/AutenticacaoServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/CadastroReservaTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/CadastroReservaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasDataTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasDataTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/tela/LoginTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/util/DataFormatTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/util/DataFormatTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoAlfaNumericoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ricardo/validacao/ValidacaoAlfaNumericoTest.java" />
     </list>
     <ignored path="HotelV4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QuartoDAOImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+            <state relative-caret-position="581">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -106,7 +70,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroUsuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/conexao/EntityManagerFactorySingleton.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/UsuarioSimples.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/pessoa/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/promptdecorators/PromptComMensagemErro.java" />
@@ -119,10 +82,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Quarto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeReservasDataTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ricardo/util/DataFormatTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroReserva.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java" />
@@ -143,9 +104,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeReservasUsuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/CadastroQuarto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/funcoesmenu/ExibeQuartos.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/menu/MenuImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -547,7 +512,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.DataFormatTest">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -566,32 +531,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="hotel" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DataFormatTest.strToDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ricardo.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hotel" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ricardo.util" />
-      <option name="MAIN_CLASS_NAME" value="com.ricardo.util.DataFormatTest" />
-      <option name="METHOD_NAME" value="strToDate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="DataFormatTest.dateTimeToStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -660,6 +599,32 @@
       <option name="MAIN_CLASS_NAME" value="com.ricardo.util.DataFormatTest" />
       <option name="METHOD_NAME" value="dateAddBy" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataFormatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ricardo.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hotel" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ricardo.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ricardo.util.DataFormatTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -887,18 +852,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DataFormatTest.strToDate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateTimeToStr" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DataFormatTest.strToDateTime" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateAddBy" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateTimeToStr" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DataFormatTest.strToDateTime" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateAddBy" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DataFormatTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateAddBy" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DataFormatTest.strToDateTime" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateTimeToStr" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DataFormatTest.strToDate" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DataFormatTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateAddBy" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DataFormatTest.strToDateTime" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DataFormatTest.dateTimeToStr" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
@@ -989,12 +954,19 @@
       <option name="project" value="LOCAL" />
       <updated>1467296040662</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Mudança nos DAOs e nos Services para utilizar um Facade para o EntityManagerFactory.">
+      <created>1467376086107</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1467376086107</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataFormatTest_dateAddBy - 2016.06.30 at 12h 46m 13s.xml">
-      <configuration name="DataFormatTest.dateAddBy" configurationId="JUnit" />
+    <history-entry file="DataFormatTest - 2016.07.01 at 10h 24m 33s.xml">
+      <configuration name="DataFormatTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DataFormatTest_dateAddBy - 2016.06.30 at 12h 47m 00s.xml">
       <configuration name="DataFormatTest.dateAddBy" configurationId="JUnit" />
@@ -1024,12 +996,21 @@
       <configuration name="DataFormatTest.strToDateTime" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -1073,7 +1054,8 @@
     <MESSAGE value="Refatorando função main." />
     <MESSAGE value="Mudança na maneira como a data e hora é armazenado. Agora existe apenas uma variável do tipo Date que armazena data e hora tudo junto." />
     <MESSAGE value="Arrumando consulta de reserva por data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrumando consulta de reserva por data" />
+    <MESSAGE value="Mudança nos DAOs e nos Services para utilizar um Facade para o EntityManagerFactory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudança nos DAOs e nos Services para utilizar um Facade para o EntityManagerFactory." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1089,13 +1071,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/tela/CadastroUsuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/conexao/ConexaoHandlerHolder.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/conexao/ConexaoHandlerImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ricardo/tela/ExibeQuartosTest.java">
@@ -1141,13 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/menu/MenuImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/TabelasDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -1173,6 +1141,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,6 +1165,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,6 +1178,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,6 +1186,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,20 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ricardo/util/DataFormatTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1243,17 +1206,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/interfaces/ReservaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,18 +1222,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasPorUsuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/suites/Reserva.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding>
+            <element signature="e#1264#1265#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1629#1630#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1291,6 +1254,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,6 +1274,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1450,26 +1415,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/menu/MenuImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+        <state relative-caret-position="128">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/tela/ExibeReservasPorUsuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/ReservaDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
+        <state relative-caret-position="216">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/util/DataFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/QuartoDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="1008">
+          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ricardo/util/DataFormatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ricardo/dataaccess/UsuarioDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
           <folding />
         </state>
       </provider>

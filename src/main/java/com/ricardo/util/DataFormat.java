@@ -1,15 +1,21 @@
 package com.ricardo.util;
 
+import com.ricardo.dataaccess.QuartoDAOImpl;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by ricardo on 17/05/16.
  * Classe utilitária para conversão de formato de data.
  */
 public class DataFormat {
+    private static final Logger log = Logger.getLogger(DataFormat.class.getName());
+
     /**
      * Converte a string 'dd/MM/aaaa;HH:mm' para o formato Date.
      * [dd: Dia], [MM: Mês], [aaaa: Ano], [HH: Hora (0 - 23)], [mm: Minuto]
@@ -25,7 +31,7 @@ public class DataFormat {
         try {
             dataConvertida = new SimpleDateFormat("dd/MM/yyyy;HH:mm").parse(data);
         } catch (ParseException e) {
-            // TODO: Colocar log dizendo que não deveria cair aqui nunca.
+            log.log( Level.SEVERE, e.toString(), e );
         }
 
         return dataConvertida;

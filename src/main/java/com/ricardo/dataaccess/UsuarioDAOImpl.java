@@ -8,6 +8,8 @@ import com.ricardo.util.CloseQuietly;
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by ricardo on 24/05/16.
@@ -17,6 +19,7 @@ import java.util.Objects;
  */
 public class UsuarioDAOImpl implements UsuarioDAO {
     private EntityManagerFactoryFacade entityManagerFactoryFacade;
+    private static final Logger log = Logger.getLogger(UsuarioDAOImpl.class.getName());
 
     public UsuarioDAOImpl(EntityManagerFactoryFacade eMFF) {
         this.entityManagerFactoryFacade = Objects.requireNonNull(eMFF, this.getClass().getName() + ": Argumento nulo no construtor");
@@ -49,16 +52,15 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public List<Usuario> getUsuariosSistema() {
-        Query query = null;
+        Query query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
             query = eM.createQuery("SELECT u FROM Usuario u");
+            return query.getResultList();
         } finally {
             CloseQuietly.close(eM);
         }
-
-        return query.getResultList();
     }
 
     /**
@@ -112,13 +114,9 @@ public class UsuarioDAOImpl implements UsuarioDAO {
             eM.getTransaction().begin();
             eM.persist(usuario);
             eM.getTransaction().commit();
-        } catch (EntityExistsException e) {
-
-        } catch (IllegalArgumentException e) {
-
-        } catch (TransactionRequiredException e) {
-
-        }finally {
+        } catch (EntityExistsException | TransactionRequiredException e) {
+            log.log( Level.SEVERE, e.toString(), e );
+        } finally {
             CloseQuietly.close(eM);
         }
     }
