@@ -4,6 +4,7 @@ import com.ricardo.interfaces.EntityManagerFactoryFacade;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.Objects;
 
 /**
  * Created by ricardo on 30/06/16.
@@ -12,8 +13,7 @@ public class EntityManagerFactoryFacadeImpl implements EntityManagerFactoryFacad
     private EntityManagerFactory entityManagerFactory;
 
     public EntityManagerFactoryFacadeImpl(EntityManagerFactory entityManagerFactory) {
-        // TODO lance exception se for nulo pois se não o método abaixo vai dar null pointer exception
-        this.entityManagerFactory = entityManagerFactory;
+        this.entityManagerFactory = Objects.requireNonNull(entityManagerFactory, this.getClass().getName() + ": Argumento nulo no construtor.");
     }
 
     @Override

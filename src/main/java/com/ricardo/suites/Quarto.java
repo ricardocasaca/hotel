@@ -1,6 +1,7 @@
 package com.ricardo.suites;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
@@ -9,8 +10,10 @@ import javax.persistence.Id;
  */
 @Entity
 public class Quarto {
-    // TODO Não use isso como chave, utilize outro, pois se eu quiser desativar esse, e criar outro no lugar com o mesmo numeor, e agora josé?
     @Id
+    @GeneratedValue
+    private int id;
+
     private String numero;
 
     public Quarto() {

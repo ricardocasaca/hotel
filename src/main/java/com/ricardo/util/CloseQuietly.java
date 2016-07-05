@@ -23,18 +23,17 @@ public class CloseQuietly {
         }
     }
 
-    // TODO Ctrl + C & Ctrl + V Detected!!!
     /**
-     * Fecha a stream.
+     * Fecha o EntityManager.
      *
-     * @param c Stream a ser fechada.
+     * @param eM EntityManager a ser fechado.
      */
-    public static void close(EntityManager c) {
-        if (c == null)
+    public static void close(EntityManager eM) {
+        if (eM == null)
             return;
 
         try {
-            c.close();
+            eM.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

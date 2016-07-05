@@ -5,10 +5,7 @@ import com.ricardo.interfaces.QuartoDAO;
 import com.ricardo.suites.Quarto;
 import com.ricardo.util.CloseQuietly;
 
-import javax.persistence.EntityExistsException;
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TransactionRequiredException;
+import javax.persistence.*;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,12 +33,11 @@ public class QuartoDAOImpl implements QuartoDAO {
      */
     @Override
     public List<Quarto> getAllQuartos() {
-        Query query;
+        TypedQuery<Quarto> query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            // TODO Utilizar query tipadas!!!
-            query = eM.createQuery("SELECT c FROM Quarto c");
+            query = eM.createQuery("SELECT c FROM Quarto c", Quarto.class);
             return query.getResultList();
         } finally {
             CloseQuietly.close(eM);

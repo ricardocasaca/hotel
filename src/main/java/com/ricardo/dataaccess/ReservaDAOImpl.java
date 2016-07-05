@@ -7,10 +7,8 @@ import com.ricardo.suites.Quarto;
 import com.ricardo.suites.Reserva;
 import com.ricardo.util.CloseQuietly;
 
-import javax.persistence.EntityExistsException;
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TransactionRequiredException;
+import javax.persistence.*;
+import javax.persistence.metamodel.Type;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -40,12 +38,11 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorQuarto(Quarto quarto) {
-        Query query;
+        TypedQuery<Reserva> query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            // TODO Utilizar query tipadas!!!
-            query = eM.createQuery("SELECT c FROM Reserva c");
+            query = eM.createQuery("SELECT c FROM Reserva c", Reserva.class);
             return query.getResultList();
         } finally {
             CloseQuietly.close(eM);
@@ -61,12 +58,11 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorData(Date data) {
-        Query query;
+        TypedQuery<Reserva> query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            // TODO Utilizar query tipadas!!!
-            query = eM.createQuery("SELECT r FROM Reserva r WHERE :data BETWEEN r.dataHoraEntrada AND r.dataHoraSaida");
+            query = eM.createQuery("SELECT r FROM Reserva r WHERE :data BETWEEN r.dataHoraEntrada AND r.dataHoraSaida", Reserva.class);
             query.setParameter("data", data);
             return query.getResultList();
         } finally {
@@ -103,11 +99,10 @@ public class ReservaDAOImpl implements ReservaDAO {
      */
     @Override
     public List<Reserva> getReservasPorUsuario(Usuario usuario) {
-        Query query;
+        TypedQuery<Reserva> query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
         try {
-            // TODO Utilizar query tipadas!!!
-            query = eM.createQuery("SELECT r FROM Reserva r WHERE r.usuario = :usuario");
+            query = eM.createQuery("SELECT r FROM Reserva r WHERE r.usuario = :usuario", Reserva.class);
             query.setParameter("usuario", usuario);
             return query.getResultList();
         } finally {

@@ -52,12 +52,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      */
     @Override
     public List<Usuario> getUsuariosSistema() {
-        Query query;
+        TypedQuery<Usuario> query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
-            // TODO Utilizar query tipadas!!!
-            query = eM.createQuery("SELECT u FROM Usuario u");
+            query = eM.createQuery("SELECT u FROM Usuario u", Usuario.class);
             return query.getResultList();
         } finally {
             CloseQuietly.close(eM);
