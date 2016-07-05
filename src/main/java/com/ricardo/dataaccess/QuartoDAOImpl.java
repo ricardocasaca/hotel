@@ -40,6 +40,7 @@ public class QuartoDAOImpl implements QuartoDAO {
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
+            // TODO Utilizar query tipadas!!!
             query = eM.createQuery("SELECT c FROM Quarto c");
             return query.getResultList();
         } finally {

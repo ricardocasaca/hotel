@@ -12,6 +12,7 @@ import java.util.Objects;
  * Created by ricardo on 06/06/16.
  * Classe de serviço responsável por criar as tabelas na base de dados.
  */
+// TODO Classe não utilizada
 public class CriarTabelasServiceImpl implements CriarTabelasService {
     private TabelasDAO tabelasDAO;
 

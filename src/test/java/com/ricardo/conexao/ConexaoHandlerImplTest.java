@@ -21,6 +21,8 @@ public class ConexaoHandlerImplTest {
     @Rule
     public ExpectedException excecao = ExpectedException.none();
 
+    
+    // TODO Classes fora do projeto, ConexaoHandlerImpl, Sqlite etc
     @Test
     public void verificaSeListaDeConexoesLivresEAlteradaAoLiberarUmaConexao() throws Exception {
         BaseDeDados mockedBD = mock(BaseDeDados.class);

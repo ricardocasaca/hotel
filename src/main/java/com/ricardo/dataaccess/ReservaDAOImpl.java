@@ -44,6 +44,7 @@ public class ReservaDAOImpl implements ReservaDAO {
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
+            // TODO Utilizar query tipadas!!!
             query = eM.createQuery("SELECT c FROM Reserva c");
             return query.getResultList();
         } finally {
@@ -64,6 +65,7 @@ public class ReservaDAOImpl implements ReservaDAO {
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
+            // TODO Utilizar query tipadas!!!
             query = eM.createQuery("SELECT r FROM Reserva r WHERE :data BETWEEN r.dataHoraEntrada AND r.dataHoraSaida");
             query.setParameter("data", data);
             return query.getResultList();
@@ -103,8 +105,8 @@ public class ReservaDAOImpl implements ReservaDAO {
     public List<Reserva> getReservasPorUsuario(Usuario usuario) {
         Query query;
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
-
         try {
+            // TODO Utilizar query tipadas!!!
             query = eM.createQuery("SELECT r FROM Reserva r WHERE r.usuario = :usuario");
             query.setParameter("usuario", usuario);
             return query.getResultList();

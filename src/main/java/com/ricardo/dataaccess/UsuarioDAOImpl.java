@@ -56,6 +56,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
         EntityManager eM = this.entityManagerFactoryFacade.createEntityManager();
 
         try {
+            // TODO Utilizar query tipadas!!!
             query = eM.createQuery("SELECT u FROM Usuario u");
             return query.getResultList();
         } finally {

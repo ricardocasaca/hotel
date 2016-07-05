@@ -23,6 +23,7 @@ public class CloseQuietly {
         }
     }
 
+    // TODO Ctrl + C & Ctrl + V Detected!!!
     /**
      * Fecha a stream.
      *

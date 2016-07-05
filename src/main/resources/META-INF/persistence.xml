@@ -6,6 +6,7 @@
 http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd
 http://java.sun.com/xml/ns/persistence ">
 
+    <!-- TODO sqlunit? coloque o nome sobre o que a base representa,e não qual banco está utilizando, pois pro JPA não importa o banco-->
     <persistence-unit name="sqliteunit"
                       transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>

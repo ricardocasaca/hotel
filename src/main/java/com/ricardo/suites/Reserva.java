@@ -11,6 +11,7 @@ import java.util.Date;
  */
 @Entity
 public class Reserva {
+    // TODO pule uma linha entre os campos, para facilitar a legibilidade
     @Id
     @GeneratedValue
     private int id;

@@ -12,6 +12,7 @@ public class EntityManagerFactoryFacadeImpl implements EntityManagerFactoryFacad
     private EntityManagerFactory entityManagerFactory;
 
     public EntityManagerFactoryFacadeImpl(EntityManagerFactory entityManagerFactory) {
+        // TODO lance exception se for nulo pois se não o método abaixo vai dar null pointer exception
         this.entityManagerFactory = entityManagerFactory;
     }
 
